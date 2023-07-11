@@ -151,13 +151,21 @@ const Header = () => {
                 <div className='my-6 border border-gray-400'></div>
                 <div className='w-1/4 flex flex-col p-8'>
                     <ul className='header h-full'>
-                        <li onMouseEnter={() => handleItemHover('CISA Training', '/information-security')}>CISA Training</li>
-                        <li onMouseEnter={() => handleItemHover('CISSP Training', '/information-security')}>CISSP Training</li>
-                        <li onMouseEnter={() => handleItemHover('Business continuity and disaster recovery', '/information-security')}>
-                        Business continuity and disaster recovery
-                        </li>
-                        <li onMouseEnter={() => handleItemHover('ITIL v3 Foundation Training', '/information-security')}>ITIL v3 Foundation Training</li>
-                        <li onMouseEnter={() => handleItemHover('Linux Training', '/information-security')}>Linux Training</li>
+                        <Link to={'/cisa-training'}>
+                          <li onMouseEnter={() => handleItemHover('CISA Training', '/cisa-training')}>CISA Training</li>
+                        </Link>
+                        <Link to={'/cissp-training'}>
+                          <li onMouseEnter={() => handleItemHover('CISSP Training', '/cissp-training')}>CISSP Training</li>
+                        </Link>
+                        <Link to={'/introduction-to-business-continuity-disaster-recovery'}>
+                          <li onMouseEnter={() => handleItemHover('Business continuity and disaster recovery', '/introduction-to-business-continuity-disaster-recovery')}>Business continuity and disaster recovery</li>
+                        </Link>
+                        <Link to={'/itil-training'}>
+                          <li onMouseEnter={() => handleItemHover('ITIL v3 Foundation Training', '/itil-training')}>ITIL v3 Foundation Training</li>
+                        </Link>
+                        <Link to={'/linux-training'}>
+                          <li onMouseEnter={() => handleItemHover('Linux Training', '/linux-training')}>Linux Training</li>
+                        </Link>
                     </ul>
                 </div>
                 <div className='my-6 border border-gray-400'></div>
