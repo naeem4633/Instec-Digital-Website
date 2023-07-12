@@ -5,21 +5,27 @@
 .services li{
     cursor: pointer;
     font-weight: bold;
-    padding: 1rem;
+    padding: 8px;
     border-radius: 2px;
 }
 
 .services li:hover {
     background-color: black;
+    box-shadow: 0 0 5px red;
 }
 
 .training li{
   cursor: pointer;
   font-weight: bold;
-  padding: 1rem;
+  padding: 8px;
   border-radius: 2px;
 }
 
 .training li:hover {
   background-color: black;
+  box-shadow: 0 0 5px red;
+}
+
+.color-secondary{
+  background-color: #1b1f24;
 }

@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-        <section className='relative bottom-0 w-full bg-gray-800 text-gray-200 h-[10vh]'>
+        <section className='relative bottom-0 w-full color-secondary text-gray-200 h-[10vh]'>
             <div className='mx-auto w-3/4 h-full flex flex-row justify-between items-center'>
                 <div className='text-sm'>
                     <p>© 2023 Insec Digital Systems™. All Rights Reserved</p>

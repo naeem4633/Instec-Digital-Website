@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { ResetPage } from '../ResetPage';
 
 const Trainings = () => {
   return (
     <>
     <section className='trainings flex flex-col py-8 space-y-12 items-center  w-full text-black'>
+        <ResetPage />
         <div className='w-3/4 mx-auto text-3xl text-center font-semibold'>TRAININGS</div>
         <div className='w-1/2 mx-auto border border-gray-200'></div>
         <div className='w-full'>
@@ -43,7 +45,7 @@ const Trainings = () => {
                     <div className='flex flex-col space-y-8'>
                         <p className='text-2xl font-semibold tracking-wider'>BUSINESS CONTINUITY AND DISASTER RECOVERY</p>
                         <div className='flex flex-col'>
-                            <Link className='text-xl tracking-wide text-red-800 font-semibold transition-transform duration-300 hover:scale-105 hover:underline'>
+                            <Link to={'/introduction-to-business-continuity-disaster-recovery'} className='text-xl tracking-wide text-red-800 font-semibold transition-transform duration-300 hover:scale-105 hover:underline'>
                                 Introduction to Business Continuity and Disaster Recovery
                             </Link>
                         </div>
@@ -57,7 +59,7 @@ const Trainings = () => {
                     <div className='flex flex-col space-y-8'>
                         <p className='text-2xl font-semibold tracking-wider'>OPERATING SYSTEMS</p>
                         <div className='flex flex-col'>
-                            <Link className='text-xl tracking-wide text-red-800 font-semibold transition-transform duration-300 hover:scale-105 hover:underline'>
+                            <Link to={'/linux-training'} className='text-xl tracking-wide text-red-800 font-semibold transition-transform duration-300 hover:scale-105 hover:underline'>
                             Linux Advanced Administration Training
                             </Link>
                         </div>
@@ -77,10 +79,10 @@ const Trainings = () => {
                     <div className='flex flex-col space-y-8'>
                         <p className='text-2xl font-semibold tracking-wider'>INFOSEC CERTIFICATION PREPARATION</p>
                         <div className='flex flex-col space-y-4'>
-                            <Link className='text-xl tracking-wide text-red-800 font-semibold transition-transform duration-300 hover:scale-105 hover:underline'>
+                            <Link to={'/cisa-training'} className='text-xl tracking-wide text-red-800 font-semibold transition-transform duration-300 hover:scale-105 hover:underline'>
                                 Certified Information Systems Auditor (CISA)
                             </Link>
-                            <Link className='text-xl tracking-wide text-red-800 font-semibold transition-transform duration-300 hover:scale-105 hover:underline'>
+                            <Link to={'/cissp-training'} className='text-xl tracking-wide text-red-800 font-semibold transition-transform duration-300 hover:scale-105 hover:underline'>
                                 Certified Information Systems Security Professional (CISSP)
                             </Link>
                         </div>
@@ -94,7 +96,7 @@ const Trainings = () => {
                     <div className='flex flex-col space-y-8'>
                         <p className='text-2xl font-semibold tracking-wider'>ITSM CERTIFICATION PREPARATION</p>
                         <div className='flex flex-col'>
-                            <Link className='text-xl tracking-wide text-red-800 font-semibold transition-transform duration-300 hover:scale-105 hover:underline'>
+                            <Link to={'/itil-training'} className='text-xl tracking-wide text-red-800 font-semibold transition-transform duration-300 hover:scale-105 hover:underline'>
                                 Information Technology Infrastructure Library (ITIL) V3 Foundation Course
                             </Link>
                         </div>
@@ -120,22 +122,6 @@ const Trainings = () => {
                         </div>
                     </div> 
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section className='w-full bg-gray-800 text-gray-200 h-[10vh]'>
-        <div className='mx-auto w-3/4 h-full flex flex-row justify-between items-center'>
-            <div className='text-sm'>
-                <p>© 2023 Insec Digital Systems™. All Rights Reserved</p>
-            </div>
-            <div className='flex space-x-4'>
-                <a href='https://www.linkedin.com/company/instec-digital-systems/' className='transition-transform hover:-translate-y-1'>
-                <img className='w-4 h-4' src='../static/images/linkedin.png'></img>
-                </a>
-                <a href='mailto:info@instecdigital.com' className='transition-transform hover:-translate-y-1'>
-                <img className='w-4 h-4' src='../static/images/email.png'></img>
-                </a>
             </div>
         </div>
     </section>

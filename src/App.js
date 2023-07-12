@@ -11,7 +11,15 @@ import CisspTraining from './pages/CisspTraining';
 import BusinessContinuity from './pages/BusinessContinuity';
 import ItilTraining from './pages/ItilTraining';
 import LinuxTraining from './pages/LinuxTraining';
+import CloudComputing from './pages/CloudComputing';
+import VirtualizationClouds from './pages/VirtualizationClouds';
+import WebDesign from './pages/WebDesign';
+import InformationSecurity from './pages/InformationSecurity';
 import Contact from './pages/Contact';
+import ServiceBusinessContinuity from './pages/ServiceBusinessContinuity';
+import DataCenterServices from './pages/DataCenterServices';
+import DataAndItService from './pages/DataAndItService';
+import About from './pages/About';
 
 function App() {
   return (
@@ -28,7 +36,15 @@ function App() {
             <Route path='/introduction-to-business-continuity-disaster-recovery' element={<BusinessContinuity/>}/>
             <Route path='/itil-training' element={<ItilTraining/>}/>
             <Route path='/linux-training' element={<LinuxTraining/>}/>
-            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/cloud-computing' element={<CloudComputing/>}/>
+            <Route path='/virtualization-and-clouds' element={<VirtualizationClouds/>}/>
+            <Route path='/web-design-development' element={<WebDesign/>}/>
+            <Route path='/information-security' element={<InformationSecurity/>}/>
+            <Route path='/business-continuity' element={<ServiceBusinessContinuity/>}/>
+            <Route path='/data-center-services' element={<DataCenterServices/>}/>
+            <Route path='/data-and-it-service-management' element={<DataAndItService/>}/>
+            <Route path='/contact-us' element={<Contact/>}/>
+            <Route path='/about-us' element={<About/>}/>
           </Routes>
         </div>
         <Footer />
