@@ -61,9 +61,11 @@ const Header = () => {
   }, []);
   return (
     <section className='sticky top-0 w-full h-16 color-secondary text-white z-50'>
-        <div className='flex justify-between px-2'>
+        <div className='w-full flex justify-between px-2'>
+            <div>
+              <img className='border border-white w-44 h-16 mr-4' src='' alt='logo'></img>
+            </div>
             <div className='flex items-center'>
-                <img className='border border-white w-44 h-16 mr-4' src='' alt='logo'></img>
                 <Link to={'/about-us'}>
                   <p className='hidden md:block p-4 hover:bg-red-800 cursor-pointer hover:text-white'>About</p>
                 </Link>
@@ -72,9 +74,12 @@ const Header = () => {
                 <Link to={'/contact-us'}>
                   <p className='hidden md:block p-4 hover:bg-red-800 cursor-pointer hover:text-white'>Contact Us</p>
                 </Link>
+                <Link to={'/incident-response'}>
+                  <p className='hidden md:block p-4 bg-red-800 hover:bg-gray-200 hover:text-black hover:scale-95 transition-all duration-300 cursor-pointer font-semibold'>Incident Response Help</p>
+                </Link>
             </div>
-            <div className='flex items-center space-x-4 w-1/5 justify-end'>
-                <img className='md:hidden w-10 h-10 cursor-pointer' src='../static/images/header-menu.png' alt='menu' onClick={handleMenuClick}></img>
+            <div className='md:hidden flex items-center space-x-4 w-1/5 justify-end'>
+                <img className='w-10 h-10 cursor-pointer' src='../static/images/header-menu.png' alt='menu' onClick={handleMenuClick}></img>
             </div>
         </div>
 

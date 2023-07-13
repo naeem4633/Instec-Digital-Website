@@ -7,10 +7,22 @@ const DataCenterServices = () => {
     const secondGroupRef = useIntersectionObserver('.second-group');
 
   return (
-    <section className='trainings flex flex-col pb-8 space-y-8 items-center min-h-[100vh] w-full text-black'>
+    <section className='flex flex-col pb-8 space-y-8 items-center w-full text-black'>
         <ResetPage />
+        <div className='w-full h-[100vh]'>
+          <img src='../static/images/gradient-1.png' className='w-full h-full'></img>
+          <div className='mx-auto space-x-52 flex flex-row justify-center items-center w-1/2 -translate-y-[90vh]'>
+            <div className='flex flex-col heading items-start'>
+                <p className='text-white text-6xl font-bold '>Data Center</p>
+                <p className='text-6xl font-bold text-red-800'>Services</p> 
+            </div>
+            <img className='' src='../static/images/first.png'></img>
+          </div>
+        </div>
         <div className='w-full flex flex-col space-y-4 p-8'>
-            <p className='w-3/4 mx-auto text-3xl text-center font-semibold'>Data Center Services</p>
+            <div className='flex flex-col'>
+                <p className='w-3/4 mx-auto text-3xl text-center font-bold'>Data Center Services</p>
+            </div>
             <div className='mx-auto w-1/2 border border-gray-200'></div>
             <p className='w-3/4 mx-auto text-xl text-center'>Instec delivers the best solutions in datacenter and computer room conceptualization, architecture and design. 
             Our highly customized data center designs are based on the existing state-of-the-art components that go into a modern day data center.</p>
@@ -26,7 +38,10 @@ const DataCenterServices = () => {
                 </div>
                 <div className='w-3/4 flex flex-col justify-start space-y-6 items-start'>
                     <div className='flex flex-col text-white space-y-2'>
-                        <p className='text-3xl font-semibold'>Security Testing & Assessment</p>
+                        <div className='flex flex-row'>
+                            <p className='text-3xl font-semibold'>Security Testing & </p>
+                            <p className='text-3xl font-semibold text-black'>&nbsp;Assessment</p>
+                        </div>
                     </div>
                     <div className='w-3/4 first-group'>
                         <p className='text-lg text-left'>Data center is a huge investment. Data center managers are tasked with continually ensuring the upkeep and maintenance of 

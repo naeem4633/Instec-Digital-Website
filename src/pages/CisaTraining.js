@@ -1,29 +1,40 @@
 import React from 'react'
 import useIntersectionObserver from '../Animations';
 import { ResetPage } from '../ResetPage';
+import { Link } from 'react-router-dom';
 
 const CisaTraining = () => {
     const firstGroupRef = useIntersectionObserver('.first-group');
     const secondGroupRef = useIntersectionObserver('.second-group');
 
   return (
-    <section className='trainings flex flex-col py-8 space-y-8 items-center min-h-[100vh] w-full text-black'>
+    <section className='flex flex-col pb-8 space-y-8 items-center w-full text-black'>
         <ResetPage />
-        <div className='w-3/4 mx-auto text-3xl text-center font-semibold'>CISA Training</div>
-        <div className='flex flex-row w-3/4 mx-auto items-center text-xl text-center font-bold justify-between'>
-            <div>
-                <p className='tracking-wide'>Certified Information Systems Auditor (CISA) Course</p>
+        <div className='flex flex-col h-[100vh]'>
+            <img src='../static/images/gradient-1.png' className='w-full h-[100vh]'></img>
+            <div className='w-full h-full flex flex-col -translate-y-[90vh]'>
+            <div className='mx-auto space-x-52 flex flex-row justify-center items-center w-1/2 '>
+                <div className='flex flex-col heading items-start'>
+                    <p className='text-6xl font-bold text-red-800'>CISA</p> 
+                    <p className='text-white text-6xl font-bold'>Training</p>
+                </div>
+                <img className='' src='../static/images/first.png'></img>
             </div>
-            <div className='space-y-2'>
-                <p>Duration</p>
-                <div className='flex space-x-4'>
-                    <img src='../static/images/clock.png' className='w-8 h-8'></img>
-                    <p>5 Days</p>
+            <div className='p-12 flex flex-row w-full mx-auto items-center text-xl text-center font-bold justify-between text-white'>
+                    <div>
+                        <p className='tracking-wide'>Certified Information Systems Auditor (CISA) Course</p>
+                    </div>
+                    <div className='space-y-2'>
+                        <p>Duration</p>
+                        <div className='flex space-x-4'>
+                            <img src='../static/images/clock-white.png' className='w-8 h-8'></img>
+                            <p>5 Days</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div className='w-3/4 flex flex-col mx-auto space-y-[20vh] p-8 text-white'>
-
             <div className='w-full flex flex-row bg-red-800 items-center rounded tracking-wider space-y-6 p-16'>
                 <div className='w-1/4 flex flex-col items-center space-y-6'>
                     <p className='text-3xl font-semibold'>Background</p>
@@ -105,6 +116,12 @@ const CisaTraining = () => {
                 </ul>
             </div>
         </div>
+        <Link to={'/contact-us'} className='w-3/4 items-start p-8'>
+            <div className='flex flex-row items-center justify-evenly w-32 h-12 rounded text-white font-semibold bg-red-800 hover:bg-gray-200 hover:border-2 hover:border-red-800 hover:text-black hover:-translate-y-1 transition-transform tracking-wider'>
+                <img className='w-4 h-4' src='../static/images/contact-button.png'></img>
+                <button className=''>Contact Us</button>
+            </div>
+        </Link>
     </section>
   )
 }

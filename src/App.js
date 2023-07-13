@@ -20,6 +20,8 @@ import ServiceBusinessContinuity from './pages/ServiceBusinessContinuity';
 import DataCenterServices from './pages/DataCenterServices';
 import DataAndItService from './pages/DataAndItService';
 import About from './pages/About';
+import IncidentResponse from './pages/IncidentResponse';
+import MainServicesPage from './pages/MainServicesPage';
 
 function App() {
   return (
@@ -29,7 +31,7 @@ function App() {
         <div className="App-body">
           <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='/services' element={<Services/>}/>
+            <Route path='/services-details' element={<Services/>}/>
             <Route path='/trainings' element={<Trainings/>}/>
             <Route path='/cisa-training' element={<CisaTraining/>}/>
             <Route path='/cissp-training' element={<CisspTraining/>}/>
@@ -43,6 +45,8 @@ function App() {
             <Route path='/business-continuity' element={<ServiceBusinessContinuity/>}/>
             <Route path='/data-center-services' element={<DataCenterServices/>}/>
             <Route path='/data-and-it-service-management' element={<DataAndItService/>}/>
+            <Route path='/incident-response' element={<IncidentResponse/>}/>
+            <Route path='/services' element={<MainServicesPage/>}/>
             <Route path='/contact-us' element={<Contact/>}/>
             <Route path='/about-us' element={<About/>}/>
           </Routes>

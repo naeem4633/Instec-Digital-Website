@@ -1,15 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { ResetPage } from '../ResetPage';
+import Cover from '../components/Cover';
 
 const Services = () => {
   return (
     <>
-    <section className='services flex flex-col py-8 space-y-12 items-center h-[120vh] w-full text-black'>
+    <section className='services flex flex-col pt-20 pb-24 space-y-12 items-center min-h-[120vh] w-full text-black'>
         <ResetPage />
-        <div className='w-3/4 mx-auto text-3xl text-center font-semibold'>OUR SERVICES</div>
-          <div className='w-1/2 border border-gray-200'></div>
-          <div className='w-3/4 grid grid-cols-3 mx-auto h-[85vh] gap-8'>
+          <div className='w-3/4 mx-auto text-3xl text-center font-semibold text-black'>OUR SERVICES</div>
+          <div className='w-1/2 mx-auto border border-gray-200'></div>
+          <div className='pt-20 w-3/4 grid grid-cols-3 mx-auto min-h-[100vh] gap-8'>
             <div className='flex flex-col space-y-6 px-12 justify-center bg-gray-100 border rounded-lg text-black hover:drop-shadow-2xl transition-all duration-300 hover:-translate-y-2'>
               <img className='w-12 h-12' src='../static/images/information-security.png'></img>
               <p className='text-xl font-bold'>INFORMATION SECURITY</p>
