@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Home from './pages/Home';
 import Services from './pages/Services';
 import Trainings from './pages/Trainings';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';

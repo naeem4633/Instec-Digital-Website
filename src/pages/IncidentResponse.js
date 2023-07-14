@@ -1,19 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Cover from '../components/Cover'
 
 const IncidentResponse = () => {
   return (
     <section className='flex flex-col space-y-8 items-center min-h-[100vh] w-full text-white'>
         <div className='flex flex-col w-full max-h-[250vh] lg:max-h-[150vh]'>
             <div className='w-full h-[150vh]'>
-                <img src='../static/images/gradient-2.png' className='w-full h-[250vh] lg:h-[150vh]'></img>
+                <img src='../static/images/gradient-2.png' className='w-full h-[250vh] lg:h-[150vh]' alt=''></img>
             </div>
             <div className='w-full lg:w-3/4 flex flex-col mx-auto space-y-[5vh] p-2 lg:p-8 text-gray-200 -translate-y-[140vh]'>
                 <div className='w-full flex flex-col lg:flex-row p-4 lg:p-16 bg-transparent items-start rounded lg:tracking-wider '>
                     <div className='w-full flex flex-row justify-start space-y-6 items-start'>
                         <div className='mb-20 w-full lg:w-3/4 space-y-8'>
-                            <img className='w-16 h-16' src='../static/images/warning.png'></img>
+                            <img className='w-16 h-16' src='../static/images/warning.png' alt=''></img>
                             <p className='text-left text-4xl font-semibold'>Incident Response Assistance</p>
                             <p className='text-lg text-left'>Need immediate assistance for a possible incident or security breach? You're in the right place.</p>
                             <p className='text-lg text-left'>INSTEC has been the first call for organizations around the world that are actively at risk from the most sophisticated cyber threats.</p>
@@ -42,7 +41,7 @@ const IncidentResponse = () => {
                                     <input className='rounded w-6 h-6' type='checkbox'></input>
                                     <p className=''>I'm not a Robot</p>
                                 </div>
-                                <img className='w-12 h-12' src='../static/images/capcha-image.png'></img>
+                                <img className='w-12 h-12' src='../static/images/capcha-image.png' alt=''></img>
                             </div>
                             <div className='cursor-pointer p-4 border rounded w-full bg-red-800 text-white font-semibold hover:bg-gray-200 hover:scale-95 transition-all duration-300 hover:text-black hover:font-bold'>
                                 <p className='text-center'>Contact INSTEC</p>
