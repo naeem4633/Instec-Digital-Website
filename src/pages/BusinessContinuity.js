@@ -18,7 +18,7 @@ const BusinessContinuity = () => {
                         <p className='text-6xl font-bold text-red-800'>Business Continuity &</p> 
                         <p className='text-white text-6xl font-bold'>Disaster Recovery</p>
                     </div>
-                    <img className='hidden lg:block' src='../static/images/first.png'></img>
+                    <img className='hidden lg:block' src='../static/images/training-4.png'></img>
                 </div>
                 <div className='h-1/2 p-3 lg:p-12 flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:justify-between w-full mx-auto items-center lg:text-xl text-center font-semibold justify-evenly text-white'>
                     <div>
@@ -40,7 +40,7 @@ const BusinessContinuity = () => {
                 </div>
             </div>
         </div>
-        <div className=' w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-8 text-gray-200'>
+        <div className=' w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-0 lg:p-8 text-gray-200'>
             <div className='w-full flex flex-row bg-red-800 items-center rounded lg:tracking-wider text-sm lg:text-lg space-y-6  p-4 lg:p-16'>
                 <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
                     <p className='text-xl lg:text-3xl font-semibold'>Description</p>
@@ -68,35 +68,35 @@ const BusinessContinuity = () => {
                     <p className='text-left first-group'>Providing continuous IT services under such operating environments calls for a comprehensive Disaster Recovery planning approach, and an effective IT Disaster Recovery Plan.</p>
                 </div>
             </div>
-            <div className='w-full flex flex-row bg-red-800 items-center rounded lg:tracking-wider text-sm lg:text-lg space-y-6  p-4 lg:p-16'>
+            <div className='w-full flex flex-row bg-gray-200 text-black items-center rounded lg:tracking-wider text-sm lg:text-lg space-y-6  p-4 lg:p-16'>
                 <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
                     <p className=' text-xl lg:text-3xl font-semibold'>Topics Covered</p>
-                    <img className='w-20 h-20' src='../static/images/checklist.png'></img>
+                    <img className='w-20 h-20' src='../static/images/checklist-black.png'></img>
                 </div>
                 <ul className='flex flex-col  w-full lg:w-3/4 space-y-4 p-4'>
                     <p className='lg:hidden text-xl font-bold'>Topics Covered</p>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Business Continuity Basics</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Disaster Recovery</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Security Aspects</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Underlying Technologies</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Business Continuity and DR Planning Fundamentals</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Standards and Industry best practices</p>
                     </li>
                 </ul>
@@ -118,19 +118,19 @@ const BusinessContinuity = () => {
                     </li>
                 </ul>
             </div>
-            <div className='w-full flex flex-row bg-red-800 items-center rounded lg:tracking-wider text-sm lg:text-lg space-y-6 p-4 lg:p-16'>
+            <div className='w-full flex flex-row bg-gray-200 text-black items-center rounded lg:tracking-wider text-sm lg:text-lg space-y-6 p-4 lg:p-16'>
                 <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
                     <p className=' text-xl lg:text-3xl font-semibold text-center'>E-Training Requirements</p>
-                    <img className='w-20 h-20' src='../static/images/computer.png'></img>   
+                    <img className='w-20 h-20' src='../static/images/computer-black.png'></img>   
                 </div>
                 <ul className='flex flex-col  w-full lg:w-3/4 space-y-4 p-4 first-group'>
                     <p className='lg:hidden text-xl font-bold'>E-Training Requirements</p>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>PC with camera and mic or your tablet or smartphone</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Internet connectivity</p>
                     </li>
                 </ul>

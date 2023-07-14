@@ -18,7 +18,7 @@ const CisaTraining = () => {
                         <p className='text-6xl font-bold text-red-800'>CISA</p> 
                         <p className='text-white text-6xl font-bold'>Training</p>
                     </div>
-                    <img className='hidden lg:block' src='../static/images/first.png'></img>
+                    <img className='hidden lg:block' src='../static/images/training-1.png'></img>
                 </div>
                 <div className='h-1/2 p-3 lg:p-12 flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:justify-between w-full mx-auto items-center lg:text-xl text-center font-semibold justify-evenly text-white'>
                     <div>
@@ -34,11 +34,11 @@ const CisaTraining = () => {
                 </div>
             </div>
         </div>
-        <div className=' w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-8 text-white'>
-            <div className='w-full flex flex-row bg-red-800 items-center rounded lg:tracking-wider space-y-6 text-sm lg:text-lg p-4 lg:p-16'>
+        <div className=' w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-0 lg:p-8 text-white'>
+            <div className='w-full flex flex-row bg-gray-200 text-black items-center rounded lg:tracking-wider space-y-6 text-sm lg:text-lg p-4 lg:p-16'>
                 <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
                     <p className='text-3xl font-semibold'>Background</p>
-                    <img className='w-20 h-20' src='../static/images/hiring.png'></img>
+                    <img className='w-20 h-20' src='../static/images/hiring-black.png'></img>
                 </div>
                 <div className='flex flex-col space-y-4 w-full lg:w-3/4'>
                     <p className='lg:hidden text-xl font-bold'>Background</p>
@@ -69,23 +69,23 @@ const CisaTraining = () => {
                     </li>
                 </ul>
             </div>
-            <div className='w-full flex flex-row bg-red-800 items-center rounded lg:tracking-wider space-y-6 text-sm lg:text-lg p-4 lg:p-16'>
+            <div className='w-full flex flex-row bg-gray-200 text-black items-center rounded lg:tracking-wider space-y-6 text-sm lg:text-lg p-4 lg:p-16'>
                 <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
                     <p className='text-3xl font-semibold'>Who Should Attend</p>
-                    <img className='w-20 h-20' src='../static/images/question.png'></img>
+                    <img className='w-20 h-20' src='../static/images/question-black.png'></img>
                 </div>
                 <ul className='flex flex-col w-full lg:w-3/4 space-y-4 p-4'>
                     <p className='lg:hidden text-xl font-bold'>Who Should Attend</p>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Information systems auditors and security practitioners that want to update their knowledge and skill set in the security space</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>IS audit practitioners who are planning to take the CISA examination</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>IS professionals who want to learn about the latest techniques, technologies and strategies in IS audit</p>
                     </li>
                 </ul>

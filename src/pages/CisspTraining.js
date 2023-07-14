@@ -18,7 +18,7 @@ const CisspTraining = () => {
                         <p className='text-6xl font-bold text-red-800'>CISSP</p> 
                         <p className='text-white text-6xl font-bold'>Training</p>
                     </div>
-                    <img className='hidden lg:block' src='../static/images/first.png'></img>
+                    <img className='hidden lg:block' src='../static/images/training-2.png'></img>
                 </div>
                 <div className='h-1/2 p-3 lg:p-12 flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:justify-between w-full mx-auto items-center lg:text-xl text-center font-semibold justify-evenly text-white'>
                     <div>
@@ -34,11 +34,11 @@ const CisspTraining = () => {
                 </div>
             </div>
         </div>
-        <div className=' w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-8 text-gray-200'>
-            <div className='w-full flex flex-row bg-red-800 items-center rounded lg:tracking-wider text-sm lg:text:lg space-y-6  p-4 lg:p-16'>
+        <div className=' w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-0 lg:p-8 text-gray-200'>
+            <div className='w-full flex flex-row bg-gray-200 text-black items-center rounded lg:tracking-wider text-sm lg:text-lg space-y-6  p-4 lg:p-16'>
                 <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
                     <p className='text-xl lg:text-3xl font-semibold'>Background</p>
-                    <img className='w-20 h-20' src='../static/images/hiring.png'></img>
+                    <img className='w-20 h-20' src='../static/images/hiring-black.png'></img>
                 </div>
                 <div className='w-full lg:w-3/4 first-group'>
                     <p className='mb-4 lg:hidden text-xl font-bold'>Background</p>
@@ -50,7 +50,7 @@ const CisspTraining = () => {
                     competence in the eight domains of the The International Information Systems Security Certification Consortium, or (ISC)² CISSP Common Body of Knowledge.</p>
                 </div>
             </div>
-            <div className='w-full flex flex-row bg-red-800 items-center rounded lg:tracking-wider text-sm lg:text:lg space-y-6 p-4 lg:p-16'>
+            <div className='w-full flex flex-row bg-red-800 items-center rounded lg:tracking-wider text-sm lg:text-lg space-y-6 p-4 lg:p-16'>
                 <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
                     <p className='text-xl lg:text-3xl font-semibold'>Prerequisites</p>
                     <img className='w-20 h-20' src='../static/images/checklist.png'></img>

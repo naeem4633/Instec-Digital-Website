@@ -16,7 +16,7 @@ const CloudComputing = () => {
                 <p className='text-white text-6xl font-bold '>Cloud Computing</p>
                 <p className='text-6xl font-bold text-red-800'>Services</p> 
             </div>
-            <img className='hidden lg:block' src='../static/images/first.png'></img>
+            <img className='hidden lg:block' src='../static/images/online-training.png'></img>
           </div>
         </div>
         <div className='w-full flex flex-col space-y-4 p-8'>
@@ -24,13 +24,13 @@ const CloudComputing = () => {
             <div className='w-1/2 mx-auto border border-gray-200'></div>
             <p className='w-3/4 lg:w-1/2 mx-auto lg:text-xl text-center'>Cloud opens a whole new level of opportunity. IT organizations can now have a scalable and nearly infinite set of resources available for whatever they need to do.</p>
         </div>
-        <div className=' w-full lg:w-3/4 flex flex-col mx-auto space-y-[20vh] p-8 text-white'>
-            <div className='w-full flex flex-row  p-4 lg:p-16 bg-red-800 items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg'>
+        <div className=' w-full lg:w-3/4 flex flex-col mx-auto space-y-[20vh] p-0 lg:p-8 text-white'>
+            <div className='w-full flex flex-row  p-4 lg:p-16 bg-gray-200 text-black items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg'>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
-                    <img className='mx-auto w-20 h-20' src='../static/images/cloud-service.png'></img>
+                    <img className='mx-auto w-20 h-20' src='../static/images/cloud-service-black.png'></img>
                 </div>
                 <div className=' w-full lg:w-3/4 flex flex-col justify-start space-y-6 items-start'>
-                    <p className=' text-xl lg:text-3xl font-semibold text-white'>Your Datacenter in the Cloud</p>
+                    <p className=' text-xl lg:text-3xl font-semibold'>Your Datacenter in the Cloud</p>
                     <div className=' w-full lg:w-3/4 first-group'>
                         <p className='text-left'>Cloud computing is a style of computing in which scalable and elastic IT-enabled capabilities are delivered as a service using 
                         Internet technologies. Cloud infrastructure as a service (IaaS) is a type of cloud computing service; it parallels the infrastructure and data center initiatives of IT. 
@@ -38,15 +38,15 @@ const CloudComputing = () => {
                         <p className='mt-8'>Our Services Include:</p>
                         <ul className='flex flex-col  w-full lg:w-3/4 space-y-4 p-4'>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                                 <p>Assessment of Infrastructure to define the Cloud strategy</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                                 <p>Migration of applications to simplify IT Infrastructure and its recovery</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                                 <p>Operation and Design Verification & Validation</p>
                             </li>
                         </ul>
@@ -69,12 +69,12 @@ const CloudComputing = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full flex flex-row  p-4 lg:p-16 bg-red-800 items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg'>
+            <div className='w-full flex flex-row  p-4 lg:p-16 bg-gray-200 text-black items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg'>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
-                    <img className='mx-auto w-20 h-20' src='../static/images/migrate.png'></img>
+                    <img className='mx-auto w-20 h-20' src='../static/images/cloud-upload-black.png'></img>
                 </div>
                 <div className=' w-full lg:w-3/4 flex flex-col justify-start space-y-6 items-start'>
-                    <p className=' text-xl lg:text-3xl font-semibold text-white'>Migrate Enterprise Applications to the Cloud</p>
+                    <p className=' text-xl lg:text-3xl font-semibold'>Migrate Enterprise Applications to the Cloud</p>
                     <div className=' w-full lg:w-3/4 first-group'> 
                         <p className='text-left'>We help you in migrating your mission-critical enterprise applications that may be complex, performance-sensitive or contain
                          highly sensitive data. This has an added advantage of protecting your applications from downtime with disaster recovery solutions built around Cloud technologies.

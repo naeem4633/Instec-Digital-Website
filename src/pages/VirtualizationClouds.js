@@ -16,7 +16,7 @@ const VirtualizationClouds = () => {
                 <p className='text-white text-5xl lg:text-6xl font-bold '>Virtualization &</p>
                 <p className='text-5xl lg:text-6xl font-bold text-red-800'>Clouds</p> 
             </div>
-            <img className='hidden lg:block' src='../static/images/first.png'></img>
+            <img className='hidden lg:block' src='../static/images/computer-1.png'></img>
           </div>
         </div>
         <div className='w-full flex flex-col space-y-4 p-8'>
@@ -24,7 +24,7 @@ const VirtualizationClouds = () => {
             <div className='w-1/2 mx-auto border border-gray-200'></div>
             <p className='w-full lg:w-3/4 mx-auto lg:text-xl text-center'>Cloud opens a whole new level of opportunity. IT organizations can now have a scalable and nearly infinite set of resources available for whatever they need to do.</p>
         </div>
-        <div className='w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-8 text-white'>
+        <div className='w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-0 lg:p-8 text-white'>
             <div className='w-full flex flex-row p-4 lg:p-16 bg-red-800 items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg'>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
                     <img className='mx-auto w-20 h-20' src='../static/images/datacenter-virtual.png'></img>
@@ -56,12 +56,12 @@ const VirtualizationClouds = () => {
                 </div>
             </div>
 
-            <div className='w-full   flex flex-row p-4 lg:p-16 bg-red-800 items-center rounded text-sm lg:text-lg'>
+            <div className='w-full   flex flex-row p-4 lg:p-16 bg-gray-200 text-black items-center rounded text-sm lg:text-lg'>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
-                    <img className='mx-auto w-20 h-20' src='../static/images/desktop-virtual.png'></img>
+                    <img className='mx-auto w-20 h-20' src='../static/images/virtual-black.png'></img>
                 </div>
                 <div className='w-full lg:w-3/4 flex flex-col justify-start space-y-6 items-start'>
-                    <div className='flex flex-col text-white space-y-4'>
+                    <div className='flex flex-col space-y-4'>
                         <p className='text-xl lg:text-3xl font-semibold'>Desktop Virtualization</p>
                         <p className='lg:text-xl font-semibold'>Virtual Desktops for the end users</p>
                     </div>

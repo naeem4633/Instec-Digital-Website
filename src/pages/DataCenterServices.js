@@ -16,7 +16,7 @@ const DataCenterServices = () => {
                 <p className='text-white text-6xl font-bold '>Data Center</p>
                 <p className='text-6xl font-bold text-red-800'>Services</p> 
             </div>
-            <img className='hidden lg:block' src='../static/images/first.png'></img>
+            <img className='hidden lg:block' src='../static/images/data-center-cover.png'></img>
           </div>
         </div>
         <div className='w-full flex flex-col space-y-4 p-8 text-sm lg:text-xl'>

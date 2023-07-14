@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+    const [isTrainingOpen, setTrainingOpen] = useState(false);
+    const [isServicesOpen, setServicesOpen] = useState(false);
     const [showTraining, setShowTraining] = useState(false);
     const [showServices, setShowServices] = useState(false);
     const [hoveredItem, setHoveredItem] = useState('');
@@ -9,6 +11,14 @@ const Header = () => {
     const servicesRef = useRef(null);
     const trainingRef = useRef(null);
     const [showMenu, setShowMenu] = useState(false);
+
+  const handleTrainingDropDownClick = () => {
+    setTrainingOpen(!isTrainingOpen);
+  };
+
+  const handleServicesDropDownClick = () => {
+    setServicesOpen(!isServicesOpen);
+  };
 
   const handleMenuClick = () => {
     setShowMenu(!showMenu);
@@ -62,20 +72,20 @@ const Header = () => {
   return (
     <section className='sticky top-0 w-full h-16 color-secondary text-white z-50'>
         <div className='w-full flex justify-between px-2'>
-            <div>
-              <img className='border border-white w-44 h-16 mr-4' src='' alt='logo'></img>
-            </div>
-            <div className='flex items-center'>
+            <Link to={'/'}>
+              <img className='w-44 h-16 mr-4 scale-125 translate-x-10' src='../static/images/logo.png' alt='logo'></img>
+            </Link>
+            <div className='hidden md:flex items-center'>
                 <Link to={'/about-us'}>
-                  <p className='hidden md:block p-4 hover:bg-red-800 cursor-pointer hover:text-white'>About</p>
+                  <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white'>About</p>
                 </Link>
-                <p className='hidden md:block p-4 hover:bg-red-800 cursor-pointer hover:text-white' onClick={handleTrainingClick}>Trainings</p>
-                <p className='hidden md:block p-4 hover:bg-red-800 cursor-pointer hover:text-white' onClick={handleServicesClick}>Services</p>
+                <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white' onClick={handleTrainingClick}>Trainings</p>
+                <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white' onClick={handleServicesClick}>Services</p>
                 <Link to={'/contact-us'}>
-                  <p className='hidden md:block p-4 hover:bg-red-800 cursor-pointer hover:text-white'>Contact Us</p>
+                  <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white'>Contact Us</p>
                 </Link>
                 <Link to={'/incident-response'}>
-                  <p className='hidden md:block p-4 bg-red-800 hover:bg-gray-200 hover:text-black hover:scale-95 transition-all duration-300 cursor-pointer font-semibold'>Incident Response Help</p>
+                  <p className='p-4 bg-red-800 hover:bg-gray-200 hover:text-black hover:scale-95 transition-all duration-300 cursor-pointer font-semibold'>Incident Response Help</p>
                 </Link>
             </div>
             <div className='md:hidden flex items-center space-x-4 w-1/5 justify-end'>
@@ -84,32 +94,118 @@ const Header = () => {
         </div>
 
         {showMenu && (
-        <div className='header-mobile md:hidden menu absolute right-0 w-full color-secondary text-white rounded'>
-            <div className='flex flex-col items-center'>
-                <div className='w-full flex flex-col space-y-4 text-center text-xl font-bold'>
-                    <ul>
-                        <li className='mx-auto w-3/4 p-6'>
-                          <Link to={'/about-us'}>
-                            <p>About</p>
-                          </Link>
-                        </li>
-                        <div className='mx-auto w-3/4 border border-gray-400'></div>
-                        <li className='mx-auto w-3/4 p-6'>
-                            <p>Training</p>
-                        </li>
-                        <div className='mx-auto w-3/4 border border-gray-400'></div>
-                        <li className='mx-auto w-3/4 p-6'>
-                            <p>Services</p>
-                        </li>
-                        <div className='mx-auto w-3/4 border border-gray-400'></div>
-                        <li className='mx-auto w-3/4 p-6'>
-                        <Link to={'/contact-us'}>
-                          <p>Contact Us</p>
-                        </Link>
-                        </li>
-                    </ul>
+        <div className='header-mobile md:hidden'>
+          <div className='menu absolute right-0 w-full flex flex-col space-y-8 color-secondary text-white rounded h-[100vh]'>
+            <ul className=''>
+              <Link to={'about-us'} onClick={() => setShowMenu(false)}>
+                <li className='py-5 px-5 h-16 space-y-4 cursor-pointer'>
+                  About Us
+                </li>
+              </Link>
+              <hr className='border border-gray-700 mx-auto w-11/12' />
+              <li
+                className='flex flex-col justify-between py-5 px-5 min-h-12 space-y-4 cursor-pointer'
+                onClick={handleTrainingDropDownClick}
+              >
+                <div className='w-full flex flex-row justify-between'>
+                  <p>Trainings</p>
+                  {!isTrainingOpen && (<img className='w-6 h-6' src='../static/images/down-arrow.png'></img>)}
+                  {isTrainingOpen && (<img className='w-6 h-6 rotate-180' src='../static/images/down-arrow.png'></img>)}
                 </div>
+                {isTrainingOpen && (
+                  <ul className='dropdown-menu flex flex-col space-y-2 text-sm'>
+                    <Link to={'/cisa-training'} onClick={() => setShowMenu(false)}>
+                      <li className='p-2'>
+                        CISA Training
+                      </li>
+                    </Link>
+                    <Link to={'/cissp-training'} onClick={() => setShowMenu(false)}>
+                      <li className='p-2'>
+                        CISSP Training
+                      </li>
+                    </Link>
+                    <Link to={'/introduction-to-business-continuity-disaster-recovery'} onClick={() => setShowMenu(false)}>
+                      <li className='p-2'>
+                        Business continuity and disaster recovery
+                      </li>
+                    </Link>
+                    <Link to={'/itil-training'} onClick={() => setShowMenu(false)}>
+                      <li className='p-2'>
+                        ITIL v3 Foundation Training
+                      </li>
+                    </Link>
+                    <Link to={'/linux-training'} onClick={() => setShowMenu(false)}>
+                      <li className='p-2'>
+                        Linux Training
+                      </li>
+                    </Link>
+                  </ul>
+                )}
+              </li>
+              <hr className='border border-gray-700 mx-auto w-11/12' />
+              <li
+                className='flex flex-col justify-between py-5 px-5 min-h-12 space-y-4 cursor-pointer'
+                onClick={handleServicesDropDownClick}
+              >
+                <div className='w-full flex flex-row justify-between'>
+                  <p>Services</p>
+                  {!isServicesOpen && (<img className='w-6 h-6' src='../static/images/down-arrow.png'></img>)}
+                  {isServicesOpen && (<img className='w-6 h-6 rotate-180' src='../static/images/down-arrow.png'></img>)}
+                </div>
+                {isServicesOpen && (
+                  <ul className='dropdown-menu flex flex-col space-y-2 text-sm'>
+                    <Link to={'/information-security'} onClick={() => setShowMenu(false)}>
+                      <li className='p-2'>
+                        Information Security
+                      </li>
+                    </Link>
+                    <Link to={'/data-and-it-service-management'} onClick={() => setShowMenu(false)}>
+                      <li className='p-2'>
+                        Data and IT Service Management
+                      </li>
+                    </Link>
+                    <Link to={'/data-center-services'} onClick={() => setShowMenu(false)}>
+                      <li className='p-2'>
+                        Data Center Services
+                      </li>
+                    </Link>
+                    <Link to={'/business-continuity'} onClick={() => setShowMenu(false)}>
+                      <li className='p-2'>
+                        Business Continuity
+                      </li>
+                    </Link>
+                    <Link to={'/cloud-computing'} onClick={() => setShowMenu(false)}>
+                      <li className='p-2'>
+                        Cloud Computing
+                      </li>
+                    </Link>
+                    <Link to={'/virtualization-and-clouds'} onClick={() => setShowMenu(false)}>
+                      <li className='p-2'>
+                        Virtualization &amp; Clouds
+                      </li>
+                    </Link>
+                    <Link to={'/web-design-development'} onClick={() => setShowMenu(false)}>
+                      <li className='p-2'>
+                        Web Design &amp; Development
+                      </li>
+                    </Link>
+                  </ul>
+                )}
+              </li>
+              <hr className='border border-gray-700 mx-auto w-11/12' />
+              <Link to={'/contact-us'} onClick={() => setShowMenu(false)}>
+                <li className='py-5 px-5 h-16 space-y-4 cursor-pointer'>
+                  Contact Us
+                </li>
+              </Link>
+              <hr className='border border-gray-700 mx-auto w-11/12' />
+            </ul>
+            <div className='mx-auto w-5/6 p-4 bg-red-800 rounded'>
+              <Link to={'incident-response'} onClick={() => setShowMenu(false)}>
+                  <p className='text-center font-semibold'>Incident Response Help</p>
+              </Link>
             </div>
+          </div>
         </div>
         )}
 

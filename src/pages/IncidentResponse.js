@@ -4,16 +4,16 @@ import Cover from '../components/Cover'
 
 const IncidentResponse = () => {
   return (
-    <section className='flex flex-col space-y-8 items-center min-h-[150vh] w-full text-white'>
-        <div className='w-full h-[150vh]'>
+    <section className='flex flex-col space-y-8 items-center min-h-[100vh] w-full text-white'>
+        <div className='flex flex-col w-full max-h-[250vh] lg:max-h-[150vh]'>
             <div className='w-full h-[150vh]'>
-            <img src='../static/images/gradient-2.png' className='w-full h-full'></img>
+                <img src='../static/images/gradient-2.png' className='w-full h-[250vh] lg:h-[150vh]'></img>
             </div>
-            <div className='w-3/4 flex flex-col mx-auto space-y-[5vh] p-8 text-gray-200 -translate-y-[140vh]'>
-                <div className='w-full flex flex-row p-16 bg-tranparent items-start rounded tracking-wider '>
-                    <div className='w-1/2 flex flex-row justify-start space-y-6 items-start'>
-                        <div className='w-3/4 space-y-8'>
-                            <img className='w-16 h-16' src='../static/images/warning.png'></img> 
+            <div className='w-full lg:w-3/4 flex flex-col mx-auto space-y-[5vh] p-2 lg:p-8 text-gray-200 -translate-y-[140vh]'>
+                <div className='w-full flex flex-col lg:flex-row p-4 lg:p-16 bg-transparent items-start rounded lg:tracking-wider '>
+                    <div className='w-full flex flex-row justify-start space-y-6 items-start'>
+                        <div className='mb-20 w-full lg:w-3/4 space-y-8'>
+                            <img className='w-16 h-16' src='../static/images/warning.png'></img>
                             <p className='text-left text-4xl font-semibold'>Incident Response Assistance</p>
                             <p className='text-lg text-left'>Need immediate assistance for a possible incident or security breach? You're in the right place.</p>
                             <p className='text-lg text-left'>INSTEC has been the first call for organizations around the world that are actively at risk from the most sophisticated cyber threats.</p>
@@ -23,8 +23,8 @@ const IncidentResponse = () => {
                             <p className='text-lg text-left'>We're always here to help.</p>
                         </div>
                     </div>
-                    <div className='w-1/2 h-full justify-start flex flex-col text space-y-4 border-y-0 border-r-0 p-8'>
-                        <form className='w-full flex flex-col space-y-4'>
+                    <div className='w-full h-full justify-start flex flex-col text space-y-4 border-y-0 border-r-0 p-2 lg:p-8'>
+                        <form className='w-full flex flex-col space-y-4 text-white'>
                             <input className='p-3 rounded border border-white bg-transparent' placeholder='First Name'></input>
                             <input className='p-3 rounded border border-white bg-transparent' placeholder='Last Name'></input>
                             <input className='p-3 rounded border border-white bg-transparent' placeholder='Email Address'></input>
@@ -37,7 +37,7 @@ const IncidentResponse = () => {
                                 <input className='w-5 h-5 rounded' type='checkbox'></input>
                                 <p className='text-sm'>Sign me up to receive news, product updates, event information, and promotional emails.</p>
                             </div>
-                            <div className='bg-gray-100 w-3/5 justify-between text-black font-semibold flex flex-row p-4 items-center tracking-tight rounded'>
+                            <div className='bg-gray-100 m-full lg:w-3/5 justify-between text-black font-semibold flex flex-row p-4 items-center tracking-tight rounded'>
                                 <div className='flex flex-row space-x-2 items-center'>
                                     <input className='rounded w-6 h-6' type='checkbox'></input>
                                     <p className=''>I'm not a Robot</p>

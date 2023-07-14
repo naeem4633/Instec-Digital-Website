@@ -16,7 +16,7 @@ const InformationSecurity = () => {
                 <p className='text-white text-6xl font-bold '>Information Security</p>
                 <p className='text-6xl font-bold text-red-800'>Services</p> 
             </div>
-            <img className='hidden lg:block' src='../static/images/first.png'></img>
+            <img className='hidden lg:block' src='../static/images/keyboard.png'></img>
           </div>
         </div>
         <div className='w-full flex flex-col  text-black space-y-4 p-8'>
@@ -62,13 +62,13 @@ const InformationSecurity = () => {
                     </div>
                 </div>
             </div>
-        <div className=' w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-8 text-white'>
-            <div className='w-full flex flex-row p-4 lg:p-16 bg-red-800 items-center rounded drop-shadow-2xl text-sm lg:text-lg lg:tracking-wider'>
+        <div className=' w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-0 lg:p-8 text-white'>
+            <div className='w-full flex flex-row p-4 lg:p-16 bg-gray-200 text-black items-center rounded drop-shadow-2xl text-sm lg:text-lg lg:tracking-wider'>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
-                    <img className='mx-auto w-20 h-20' src='../static/images/security.png'></img>
+                    <img className='mx-auto w-20 h-20' src='../static/images/security-black.png'></img>
                 </div>
                 <div className=' w-full lg:w-3/4 flex flex-col justify-start space-y-6 items-start'>
-                    <div className='flex flex-col text-white space-y-2'>
+                    <div className='flex flex-col space-y-2'>
                         <p className='text-xl lg:text-3xl font-semibold'>Security Testing & Assessment</p>
                     </div>
                     <div className='w-full lg:w-3/4 first-group'>
@@ -77,35 +77,35 @@ const InformationSecurity = () => {
                         <p className='mt-8'>Our Services Include:</p>
                         <ul className='flex flex-col w-full lg:w-3/4 space-y-4 p-4'>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                                 <p>Security Risk Assesment</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                                 <p>Network Architecture Review</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                                 <p>Firewall Assessment</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                                 <p>Active Directory Assessment</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                                 <p>Application Architecture Review</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                                 <p>Database Architecture Review</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                                 <p>Penetration Testing</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                                 <p>Web Application Testing</p>
                             </li>
                         </ul>
@@ -153,12 +153,12 @@ const InformationSecurity = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full flex flex-row  p-4 lg:p-16 bg-red-800 items-center rounded drop-shadow-2xl text-sm lg:text-lg lg:tracking-wider'>
+            <div className='w-full flex flex-row  p-4 lg:p-16 bg-gray-200 text-black items-center rounded drop-shadow-2xl text-sm lg:text-lg lg:tracking-wider'>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
-                    <img className='mx-auto w-20 h-20' src='../static/images/applications.png'></img>
+                    <img className='mx-auto w-20 h-20' src='../static/images/application-security-black.png'></img>
                 </div>
                 <div className=' w-full lg:w-3/4 flex flex-col justify-start space-y-6 items-start'>
-                    <div className='flex flex-col text-white space-y-2'>
+                    <div className='flex flex-col space-y-2'>
                         <p className='text-xl lg:text-3xl font-semibold'>Application & Database Security</p>
                     </div>
                     <div className=' w-full lg:w-3/4 first-group'>
@@ -167,19 +167,19 @@ const InformationSecurity = () => {
                         <p className='mt-8'>Our Services Include:</p>
                         <ul className='flex flex-col  w-full lg:w-3/4 space-y-4 p-4'>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                                 <p>Secure Programming</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                                 <p>Web Application Architecture</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                                 <p>Database Security</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                                 <p>Deployment Review</p>
                             </li>
                         </ul>

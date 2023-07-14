@@ -16,7 +16,7 @@ const WebDesign = () => {
                 <p className='text-white text-5xl lg:text-6xl font-bold '>Web Design &</p>
                 <p className='text-5xl lg:text-6xl font-bold text-red-800'>Development</p> 
             </div>
-            <img className='hidden lg:block' src='../static/images/first.png'></img>
+            <img className='hidden lg:block' src='../static/images/webDev.png'></img>
           </div>
         </div>
         <div className='w-full flex flex-col space-y-4 p-8'>

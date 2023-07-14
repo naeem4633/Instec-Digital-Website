@@ -18,7 +18,7 @@ const ItilTraining = () => {
                         <p className='text-6xl font-bold text-red-800'>ITIL</p> 
                         <p className='text-white text-6xl font-bold'>Training</p>
                     </div>
-                    <img className='hidden lg:block' src='../static/images/first.png'></img>
+                    <img className='hidden lg:block' src='../static/images/training-3.png'></img>
                 </div>
                 <div className='h-1/2 p-3 lg:p-12 flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:justify-between w-full mx-auto items-center lg:text-xl text-center font-semibold justify-evenly text-white'>
                     <div>
@@ -34,7 +34,7 @@ const ItilTraining = () => {
                 </div>
             </div>
         </div>
-        <div className='w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-8 text-gray-200'>
+        <div className='w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-0 lg:p-8 text-gray-200'>
             <div className='w-full flex flex-row bg-red-800 items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg space-y-6  p-4 lg:p-16'>
                 <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
                     <p className=' text-xl lg:text-3xl font-semibold'>Description</p>
@@ -48,23 +48,23 @@ const ItilTraining = () => {
                     ITIL is the basis around which BS15000 and ISO 20000 standards have been developed.</p>
                 </div>
             </div>
-            <div className='w-full flex flex-row bg-red-800 items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg space-y-6  p-4 lg:p-16'>
+            <div className='w-full flex flex-row bg-gray-200 text-black items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg space-y-6 p-4 lg:p-16'>
                 <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
                     <p className=' text-xl lg:text-3xl font-semibold'>Who Should Attend</p>
-                    <img className='w-20 h-20' src='../static/images/question.png'></img>
+                    <img className='w-20 h-20' src='../static/images/question-black.png'></img>
                 </div>
                 <ul className='flex flex-col w-full lg:w-3/4 space-y-4 p-4'>
                     <p className='lg:hidden text-xl font-bold'>Who Should Attend</p>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>IT Professionals and Executives who are responsible for the delivery of IT Services required by their company or business, such as System/ Network</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Administrators, IT Managers, Business Managers and Analysts, Business</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Process Specialists, System Analysts, IT Architects and System Integrators</p>
                     </li>
                 </ul>
@@ -80,59 +80,59 @@ const ItilTraining = () => {
                     development, or management of information technology.</p>
                 </div>
             </div>
-            <div className='w-full flex flex-row bg-red-800 items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg space-y-6  p-4 lg:p-16'>
+            <div className='w-full flex flex-row bg-gray-200 text-black items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg space-y-6  p-4 lg:p-16'>
                 <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
                     <p className=' text-xl lg:text-3xl font-semibold'>Topics Covered</p>
-                    <img className='w-20 h-20' src='../static/images/checklist.png'></img>
+                    <img className='w-20 h-20' src='../static/images/checklist-black.png'></img>
                 </div>
                 <ul className='flex flex-col w-full lg:w-3/4 space-y-4 p-4'>
                     <p className='lg:hidden text-xl font-bold'>Topics Covered</p>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>ITIL Fundamentals</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Principles of Service Management</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Service Management as a Practice</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>ITIL V3 Key Principles and Models</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Service Strategy</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Service Design</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Service Transition</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Service Operation</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Continual Service Improvement</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Functions</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Roles and Responsibilities</p>
                     </li>
                     <li className='flex flex-row items-center space-x-4 second-group'>
-                        <img className='w-4 h-4' src='../static/images/point.png'></img>
+                        <img className='w-4 h-4' src='../static/images/point-black.png'></img>
                         <p>Technology and Architecture</p>
                     </li>
                 </ul>

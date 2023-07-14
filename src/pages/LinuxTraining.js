@@ -18,7 +18,7 @@ const LinuxTraining = () => {
                         <p className='text-6xl font-bold text-red-800'>Linux</p> 
                         <p className='text-white text-6xl font-bold'>Training</p>
                     </div>
-                    <img className='hidden lg:block' src='../static/images/first.png'></img>
+                    <img className='hidden lg:block' src='../static/images/linux.png'></img>
                 </div>
                 <div className='h-1/2 p-3 lg:p-12 flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:justify-between w-full mx-auto items-center lg:text-xl text-center font-semibold justify-evenly text-white'>
                     <div>
@@ -34,12 +34,12 @@ const LinuxTraining = () => {
                 </div>
             </div>
         </div>
-        <div className=' w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-8 text-gray-200'>
+        <div className=' w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-0 lg:p-8 text-gray-200'>
 
-            <div className='w-full flex flex-row bg-red-800 items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text:lg space-y-6  p-4 lg:p-16'>
+            <div className='w-full flex flex-row bg-gray-200 text-black items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg space-y-6  p-4 lg:p-16'>
                 <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
                     <p className='text-xl lg:text-3xl font-semibold'>Background</p>
-                    <img className='w-20 h-20' src='../static/images/hiring.png'></img>
+                    <img className='w-20 h-20' src='../static/images/hiring-black.png'></img>
                 </div>
                 <div className='flex flex-col space-y-4 w-full lg:w-3/4'>
                     <p className='lg:hidden text-xl font-bold'>Background</p>
@@ -51,7 +51,7 @@ const LinuxTraining = () => {
                     </p>
                 </div>
             </div>
-            <div className='w-full flex flex-row bg-red-800 items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text:lg space-y-6  p-4 lg:p-16'>
+            <div className='w-full flex flex-row bg-red-800 items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg space-y-6  p-4 lg:p-16'>
                 <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
                     <p className='text-xl lg:text-3xl font-semibold'>Target Audience</p>
                     <img className='w-20 h-20' src='../static/images/objective.png'></img>
