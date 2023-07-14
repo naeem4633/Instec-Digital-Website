@@ -6,23 +6,23 @@ import { Link } from 'react-router-dom';
 const BusinessContinuity = () => {
     const firstGroupRef = useIntersectionObserver('.first-group');
     const secondGroupRef = useIntersectionObserver('.second-group');
-
+    
   return (
     <section className='trainings flex flex-col pb-8 space-y-8 items-center min-h-[100vh] w-full text-black'>
         <ResetPage />
-        <div className='flex flex-col h-[100vh]'>
-            <img src='../static/images/gradient-1.png' className='w-full h-[100vh]'></img>
-            <div className='w-full h-full flex flex-col -translate-y-[90vh]'>
-            <div className='mx-auto space-x-52 flex flex-row justify-center items-center w-1/2 '>
-                <div className='flex flex-col heading items-start'>
-                    <p className='text-6xl font-bold text-red-800'>Business Continuity &</p> 
-                    <p className='text-white text-6xl font-bold'>Disaster Recovery</p>
+        <div className='w-full h-[90vh] lg:h-[100vh]'>
+            <img src='../static/images/gradient-1.png' className='w-full h-full'></img>
+            <div className='w-full h-full flex flex-col justify-evenly -translate-y-[90vh]'>
+                <div className='mx-auto space-x-52 flex flex-row justify-center items-center w-1/2 '>
+                    <div className='flex flex-col heading items-start'>
+                        <p className='text-6xl font-bold text-red-800'>Business Continuity &</p> 
+                        <p className='text-white text-6xl font-bold'>Disaster Recovery</p>
+                    </div>
+                    <img className='hidden lg:block' src='../static/images/first.png'></img>
                 </div>
-                <img className='' src='../static/images/first.png'></img>
-            </div>
-            <div className='p-12 flex flex-row w-full mx-auto items-center text-xl text-center font-bold justify-between text-white'>
+                <div className='h-1/2 p-3 lg:p-12 flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:justify-between w-full mx-auto items-center lg:text-xl text-center font-semibold justify-evenly text-white'>
                     <div>
-                        <p className='tracking-wide'>Introduction to Business Continuity & Disaster Recovery</p>
+                        <p className='lg:tracking-wide'>Introduction to Business Continuity & Disaster Recovery</p>
                     </div>
                     <div className='flex space-x-8'>
                         <div className='space-y-2'>
@@ -40,17 +40,18 @@ const BusinessContinuity = () => {
                 </div>
             </div>
         </div>
-        <div className='w-3/4 flex flex-col mx-auto space-y-[20vh] p-8 text-gray-200'>
-            <div className='w-full flex flex-row bg-red-800 items-center rounded tracking-wider space-y-6 p-16'>
-                <div className='w-1/4 flex flex-col items-center space-y-6'>
-                    <p className='text-3xl font-semibold'>Description</p>
+        <div className=' w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-8 text-gray-200'>
+            <div className='w-full flex flex-row bg-red-800 items-center rounded lg:tracking-wider text-sm lg:text-lg space-y-6  p-4 lg:p-16'>
+                <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
+                    <p className='text-xl lg:text-3xl font-semibold'>Description</p>
                     <img className='w-20 h-20' src='../static/images/hiring.png'></img>
                 </div>
-                <div className='w-3/4'>
-                    <p className='text-lg text-left first-group'>Today's businesses rely heavily on a robust and resilient information technology (IT) and telecommunications infrastructure to deliver 
+                <div className='w-full lg:w-3/4'>
+                    <p className='mb-4 lg:hidden text-xl font-bold'>Description</p>
+                    <p className='text-left first-group'>Today's businesses rely heavily on a robust and resilient information technology (IT) and telecommunications infrastructure to deliver 
                     essential business services in order to meet the company's mission, objectives, and key targets. This dependence on information technology stems from several requirements 
                     and demands including.</p>
-                    <ul className='flex flex-col w-3/4 space-y-4 p-4'>
+                    <ul className='flex flex-col w-full lg:w-3/4 space-y-4 p-4'>
                         <li className='flex flex-row items-center space-x-4 second-group'>
                             <img className='w-4 h-4' src='../static/images/point.png'></img>
                             <p>Security and Risk Management (Security, Risk, Compliance, Law, Regulations, Business Continuity)</p>
@@ -64,15 +65,16 @@ const BusinessContinuity = () => {
                             <p>Security Engineering (Engineering and Management of Security)</p>
                         </li>
                     </ul>
-                    <p className='text-lg text-left first-group'>Providing continuous IT services under such operating environments calls for a comprehensive Disaster Recovery planning approach, and an effective IT Disaster Recovery Plan.</p>
+                    <p className='text-left first-group'>Providing continuous IT services under such operating environments calls for a comprehensive Disaster Recovery planning approach, and an effective IT Disaster Recovery Plan.</p>
                 </div>
             </div>
-            <div className='w-full flex flex-row bg-red-800 items-center rounded tracking-wider space-y-6 p-16'>
-                <div className='w-1/4 flex flex-col items-center space-y-6'>
-                    <p className='text-3xl font-semibold'>Topics Covered</p>
+            <div className='w-full flex flex-row bg-red-800 items-center rounded lg:tracking-wider text-sm lg:text-lg space-y-6  p-4 lg:p-16'>
+                <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
+                    <p className=' text-xl lg:text-3xl font-semibold'>Topics Covered</p>
                     <img className='w-20 h-20' src='../static/images/checklist.png'></img>
                 </div>
-                <ul className='flex flex-col w-3/4 space-y-4 p-4'>
+                <ul className='flex flex-col  w-full lg:w-3/4 space-y-4 p-4'>
+                    <p className='lg:hidden text-xl font-bold'>Topics Covered</p>
                     <li className='flex flex-row items-center space-x-4 second-group'>
                         <img className='w-4 h-4' src='../static/images/point.png'></img>
                         <p>Business Continuity Basics</p>
@@ -99,12 +101,13 @@ const BusinessContinuity = () => {
                     </li>
                 </ul>
             </div>
-            <div className='w-full flex flex-row bg-red-800 items-center rounded tracking-wider space-y-6 p-16'>
-                <div className='w-1/4 flex flex-col items-center space-y-6 second-group'>
-                    <p className='text-3xl font-semibold'>Takeaways</p>
+            <div className='w-full flex flex-row bg-red-800 items-center rounded lg:tracking-wider text-sm lg:text-lg space-y-6 p-4 lg:p-16'>
+                <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
+                    <p className=' text-xl lg:text-3xl font-semibold'>Takeaways</p>
                     <img className='w-20 h-20' src='../static/images/badge.png'></img>
                 </div>
-                <ul className='flex flex-col w-3/4 space-y-4 p-4 first-group second-group'>
+                <ul className='flex flex-col  w-full lg:w-3/4 space-y-4 p-4 first-group second-group'>
+                    <p className='lg:hidden text-xl font-bold'>Takeaways</p>
                     <li className='flex flex-row items-center space-x-4'>
                         <img className='w-4 h-4' src='../static/images/point.png'></img>
                         <p>Training Slides</p>
@@ -115,12 +118,13 @@ const BusinessContinuity = () => {
                     </li>
                 </ul>
             </div>
-            <div className='w-full flex flex-row bg-red-800 items-center rounded tracking-wider space-y-6 p-16'>
-                <div className='w-1/4 flex flex-col items-center space-y-6'>
-                    <p className='text-3xl font-semibold text-center'>E-Training Requirements</p>
-                    <img className='w-20 h-20' src='../static/images/computer.png'></img>
+            <div className='w-full flex flex-row bg-red-800 items-center rounded lg:tracking-wider text-sm lg:text-lg space-y-6 p-4 lg:p-16'>
+                <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
+                    <p className=' text-xl lg:text-3xl font-semibold text-center'>E-Training Requirements</p>
+                    <img className='w-20 h-20' src='../static/images/computer.png'></img>   
                 </div>
-                <ul className='flex flex-col w-3/4 space-y-4 p-4 first-group'>
+                <ul className='flex flex-col  w-full lg:w-3/4 space-y-4 p-4 first-group'>
+                    <p className='lg:hidden text-xl font-bold'>E-Training Requirements</p>
                     <li className='flex flex-row items-center space-x-4 second-group'>
                         <img className='w-4 h-4' src='../static/images/point.png'></img>
                         <p>PC with camera and mic or your tablet or smartphone</p>
@@ -132,8 +136,8 @@ const BusinessContinuity = () => {
                 </ul>
             </div>
         </div>
-        <Link to={'/contact-us'} className='w-3/4 items-start p-8'>
-            <div className='flex flex-row items-center justify-evenly w-32 h-12 rounded text-white font-semibold bg-red-800 hover:bg-gray-200 hover:border-2 hover:border-red-800 hover:text-black hover:-translate-y-1 transition-transform tracking-wider'>
+        <Link to={'/contact-us'} className=' w-full lg:w-3/4 items-start p-8'>
+            <div className='mx-auto flex flex-row items-center justify-evenly w-32 h-12 rounded text-white font-semibold bg-red-800 hover:bg-gray-200 hover:border-2 hover:border-red-800 hover:text-black hover:-translate-y-1 transition-transform tracking-wider'>
                 <img className='w-4 h-4' src='../static/images/contact-button.png'></img>
                 <button className=''>Contact Us</button>
             </div>
