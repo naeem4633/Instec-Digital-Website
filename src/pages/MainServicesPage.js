@@ -87,27 +87,27 @@ const MainServicesPage = () => {
                     </button>
                 </div>
                 <div className='w-80 h-96 flex flex-col border bg-white py-4 p-2 lg:p-8 space-y-4'>
-                    <p className='font-bold text-lg'>Incident Response</p>
+                    <p className='font-bold text-lg'>Strategic Readiness</p>
                     <ul className='pl-6'>
                         <li className='flex flex-row items-baseline space-x-3'>
                             <img className='w-3 h-3' src='../static/images/point-black.png'></img>
-                            <p>Resolve incidents quickly with unmatched expertise.</p>
+                            <p>Improve capabilities against future compromise</p>
                         </li>
                         <li className='flex flex-row items-baseline space-x-3'>
                             <img className='w-3 h-3' src='../static/images/point-black.png'></img>
-                            <p>Confirm a compromise</p>
+                            <p>Advance approach to cyber risk management</p>
                         </li>
                         <li className='flex flex-row items-baseline space-x-3'>
                             <img className='w-3 h-3' src='../static/images/point-black.png'></img>
-                            <p>Stop breaches and investigate</p>
+                            <p>Strengthen cyber defenses against ransomware</p>
                         </li>
                         <li className='flex flex-row items-baseline space-x-3'>
                             <img className='w-3 h-3' src='../static/images/point-black.png'></img>
-                            <p>Manage and respond to a crisis</p>
+                            <p>Evaluate insider threats</p>
                         </li>
                         <li className='flex flex-row items-baseline space-x-3'>
                             <img className='w-3 h-3' src='../static/images/point-black.png'></img>
-                            <p>Recover after a breach</p>
+                            <p>Empower your team</p>
                         </li>
                     </ul>
                     <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
@@ -116,27 +116,27 @@ const MainServicesPage = () => {
                     </button>
                 </div>
                 <div className='w-80 h-96 flex flex-col border bg-white py-4 p-2 lg:p-8 space-y-4'>
-                    <p className='font-bold text-lg'>Incident Response</p>
+                    <p className='font-bold text-lg'>Technical Assurance</p>
                     <ul className='pl-6'>
                         <li className='flex flex-row items-baseline space-x-3'>
                             <img className='w-3 h-3' src='../static/images/point-black.png'></img>
-                            <p>Resolve incidents quickly with unmatched expertise.</p>
+                            <p>Test security controls and operations</p>
                         </li>
                         <li className='flex flex-row items-baseline space-x-3'>
                             <img className='w-3 h-3' src='../static/images/point-black.png'></img>
-                            <p>Confirm a compromise</p>
+                            <p>Evaluate with real-world attacks</p>
                         </li>
                         <li className='flex flex-row items-baseline space-x-3'>
                             <img className='w-3 h-3' src='../static/images/point-black.png'></img>
-                            <p>Stop breaches and investigate</p>
+                            <p>Assess entire attack surface</p>
                         </li>
                         <li className='flex flex-row items-baseline space-x-3'>
                             <img className='w-3 h-3' src='../static/images/point-black.png'></img>
-                            <p>Manage and respond to a crisis</p>
+                            <p>Harden against latest threats</p>
                         </li>
                         <li className='flex flex-row items-baseline space-x-3'>
                             <img className='w-3 h-3' src='../static/images/point-black.png'></img>
-                            <p>Recover after a breach</p>
+                            <p>Identify & close security gaps</p>
                         </li>
                     </ul>
                     <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
@@ -176,8 +176,8 @@ const MainServicesPage = () => {
                         </button>
                     </div>
                     <div className='w-full lg:w-1/3 p-12 flex flex-col space-y-6 items-start'>
-                        <p className='w-full text-xl font-semibold'>Ransomware</p>
-                        <p className=''>Defend against multifaceted extortion and prepare your team to respond to an attack.</p>
+                        <p className='w-full text-xl font-semibold'>Targeted attack testing</p>
+                        <p className=''>Go beyond breach and attack simulation to test the effectiveness of your controls and operations with real-world attacks leveraging the latest threat actor TTPs.</p>
                         <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
                             <p className='font-semibold text-sm'>Learn More</p>
                             <img className='w-4 h-4' src='../static/images/right-arrow.png'></img>
@@ -186,16 +186,16 @@ const MainServicesPage = () => {
                 </div>
                 <div className='flex flex-col lg:flex-row justify-evenly lg:space-x-16'>
                     <div className='w-full lg:w-1/3 p-12 flex flex-col space-y-6 items-start'>
-                        <p className='w-full text-xl font-semibold'>Ransomware</p>
-                        <p className=''>Defend against multifaceted extortion and prepare your team to respond to an attack.</p>
+                        <p className='w-full text-xl font-semibold'>Cyber security due diligence</p>
+                        <p className=''>Assess the security of interests outside of your control, including supply chain, acquisitions and third party integration.</p>
                         <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
                             <p className='font-semibold text-sm'>Learn More</p>
                             <img className='w-4 h-4' src='../static/images/right-arrow.png'></img>
                         </button>
                     </div>
                     <div className='w-full lg:w-1/3 p-12 flex flex-col space-y-6 items-start'>
-                        <p className='w-full text-xl font-semibold'>Ransomware</p>
-                        <p className=''>Defend against multifaceted extortion and prepare your team to respond to an attack.</p>
+                        <p className='w-full text-xl font-semibold'>Industrial systems and critical infrastructure</p>
+                        <p className=''>Identify ICS and OT security vulnerabilities, misconfigurations, flaws and threats specific to your industrial process.</p>
                         <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
                             <p className='font-semibold text-sm'>Learn More</p>
                             <img className='w-4 h-4' src='../static/images/right-arrow.png'></img>
@@ -204,16 +204,16 @@ const MainServicesPage = () => {
                 </div>
                 <div className='flex flex-col lg:flex-row justify-evenly lg:space-x-16'>
                     <div className='w-full lg:w-1/3 p-12 flex flex-col space-y-6 items-start'>
-                        <p className='w-full text-xl font-semibold'>Ransomware</p>
-                        <p className=''>Defend against multifaceted extortion and prepare your team to respond to an attack.</p>
+                        <p className='w-full text-xl font-semibold'>Insider threats</p>
+                        <p className=''>Boost your ability to handle malicious insiders as well as unintentional insider threats with protection throughout the attack lifecycle.</p>
                         <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
                             <p className='font-semibold text-sm'>Learn More</p>
                             <img className='w-4 h-4' src='../static/images/right-arrow.png'></img>
                         </button>
                     </div>
                     <div className='w-full lg:w-1/3 p-12 flex flex-col space-y-6 items-start'>
-                        <p className='w-full text-xl font-semibold'>Ransomware</p>
-                        <p className=''>Defend against multifaceted extortion and prepare your team to respond to an attack.</p>
+                        <p className='w-full text-xl font-semibold'>Cyber risk management</p>
+                        <p className=''>Advance your business approach to cyber risk management for effective decision-making and risk mitigation.</p>
                         <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
                             <p className='font-semibold text-sm'>Learn More</p>
                             <img className='w-4 h-4' src='../static/images/right-arrow.png'></img>
@@ -236,37 +236,37 @@ const MainServicesPage = () => {
                     <div className='w-full lg:w-1/4 p-4 lg:p-12 flex flex-col lg: items-start'>
                         <p className='w-full text-xl font-semibold'>Accelerate incident response times.</p>
                         <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
-                            <p className='font-semibold text-sm'>View All Consulting</p>
+                            <p className='font-semibold text-sm'>Incident Response Retainer</p>
                             <img className='w-4 h-4' src='../static/images/right-arrow.png'></img>
                         </button>
                     </div>
                     <div className='w-full lg:w-1/4 p-4 lg:p-12 flex flex-col lg: items-start'>
-                        <p className='w-full text-xl font-semibold'>Accelerate incident response times.</p>
+                        <p className='w-full text-xl font-semibold'>Hunt for an active or previous attack.</p>
                         <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
-                            <p className='font-semibold text-sm'>View All Consulting</p>
+                            <p className='font-semibold text-sm'>Compromise Assessment</p>
                             <img className='w-4 h-4' src='../static/images/right-arrow.png'></img>
                         </button>
                     </div>
                     <div className='w-full lg:w-1/4 p-4 lg:p-12 flex flex-col lg: items-start'>
-                        <p className='w-full text-xl font-semibold'>Accelerate incident response times.</p>
+                        <p className='w-full text-xl font-semibold'>Verify capabilities against the latest threats.</p>
                         <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
-                            <p className='font-semibold text-sm'>View All Consulting</p>
+                            <p className='font-semibold text-sm'>Red Team Assessment</p>
                             <img className='w-4 h-4' src='../static/images/right-arrow.png'></img>
                         </button>
                     </div>
                 </div>
                 <div className='flex flex-col lg:flex-row justify-evenly items-center'>
                     <div className='w-full lg:w-1/4 p-4 lg:p-12 flex flex-col lg: items-start'>
-                        <p className='w-full text-xl font-semibold'>Accelerate incident response times.</p>
+                        <p className='w-full text-xl font-semibold'>Test your incident response plans with scenario gameplay.</p>
                         <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
-                            <p className='font-semibold text-sm'>View All Consulting</p>
+                            <p className='font-semibold text-sm'>Tabletop Exercise</p>
                             <img className='w-4 h-4' src='../static/images/right-arrow.png'></img>
                         </button>
                     </div>
                     <div className='w-full lg:w-1/4 p-4 lg:p-12 flex flex-col lg: items-start'>
-                        <p className='w-full text-xl font-semibold'>Accelerate incident response times.</p>
+                        <p className='w-full text-xl font-semibold'>Empower your teams with advanced knowledge.</p>
                         <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
-                            <p className='font-semibold text-sm'>View All Consulting</p>
+                            <p className='font-semibold text-sm'>Cyber Security Training</p>
                             <img className='w-4 h-4' src='../static/images/right-arrow.png'></img>
                         </button>
                     </div>
@@ -278,21 +278,21 @@ const MainServicesPage = () => {
                         <p className='font-bold text-lg'>Explore the full portfolio</p>
                         <p>Explore the various ways Mandiant Consulting can help your organization achieve its security goals.</p>
                         <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
-                            <p className='font-bold text-red-800'>Learn More</p>
+                            <p className='font-bold text-red-800'>View All Consulting</p>
                             <img src='../static/images/right-arrow.png' className='w-3 h-4'></img>
                         </button>
                     </div>
                     <div className='w-3/4 lg:w-96 h-52 lg:h-72 flex flex-col border bg-white  p-2 lg:p-8 space-y-4'>
-                        <p className='font-bold text-lg'>Explore the full portfolio</p>
-                        <p>Explore the various ways Mandiant Consulting can help your organization achieve its security goals.</p>
+                        <p className='font-bold text-lg'>Get started</p>
+                        <p>We want to hear from you. Share your vision with our team of dedicated consulting experts and we'll shape a solution that fits your needs.</p>
                         <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
-                            <p className='font-bold text-red-800'>Learn More</p>
+                            <p className='font-bold text-red-800'>Contact Us Today</p>
                             <img src='../static/images/right-arrow.png' className='w-3 h-4'></img>
                         </button>
                     </div>
                     <div className='w-3/4 lg:w-96 h-52 lg:h-72 flex flex-col border bg-white  p-2 lg:p-8 space-y-4'>
-                        <p className='font-bold text-lg'>Explore the full portfolio</p>
-                        <p>Explore the various ways Mandiant Consulting can help your organization achieve its security goals.</p>
+                        <p className='font-bold text-lg'>Expertise On Demand</p>
+                        <p>Ask an Analyst your most challenging security questions and utilize flexible spending units to access training and consulting services.</p>
                         <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
                             <p className='font-bold text-red-800'>Learn More</p>
                             <img src='../static/images/right-arrow.png' className='w-3 h-4'></img>
@@ -313,9 +313,7 @@ const MainServicesPage = () => {
                                     <p>Get peace of mind about your organization's ability to securely maintain uninterrupted business</p>
                                     <p>operations despite the evolving threat landscape - before, during and after an incident.</p>
                                 </div>
-                                <p>Cyber security incidents require diligent preparation, rapid action and critical asset protection. INSTEC Consultants help organizations get
-                                    back to business after a security incident. They apply their frontline expertise to help organizations transform their cyber defense capabilities 
-                                    to mitigate threats and reduce business risk - before, during and after an incident.</p>
+                                <p>INSTEC responds to the world's largest breaches. We combine our frontline expertise and deep understanding of global attacker behavior to respond to breaches and help organizations prepare their defenses and operations against compromise.</p>
                                 <button className='flex flex-row items-center justify-evenly drop-shadow-xl  w-full lg:w-3/4 p-3 text-white bg-red-800 font-semibold hover:bg-red-900 rounded transitition-all duration-200'>
                                     <p className='text-center'>Get The Latest M-Trends Report</p>
                                     <img src='../static/images/right-arrow-white.png' className='w-5 h-5'></img>
