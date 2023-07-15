@@ -11,6 +11,7 @@ const About = () => {
 
   return (
     <section className='trainings flex flex-col py-8 space-y-8 items-center min-h-[100vh] w-full text-black'>
+        <ResetPage />
         <div className=' w-full lg:w-3/4 mx-auto text-3xl text-center font-semibold'>About Us</div>
         <div className=' w-full lg:w-3/4 flex flex-col mx-auto space-y-[20vh] p-8 text-gray-200'>
             <div className='w-full flex flex-col lg:flex-row p-4 lg:p-16 bg-red-800 items-center rounded lg:tracking-wider text-sm lg:text-lg'>

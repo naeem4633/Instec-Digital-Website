@@ -8,7 +8,7 @@ const MainServicesPage = () => {
     <section className='flex flex-col pb-8 space-y-12 items-center min-h-[100vh] w-full text-black bg-gray-100'>
         <ResetPage />
         <div className="flex justify-center w-full h-[100vh] bg-[url('static/images/gradient-2.png')]">
-          <div className='mx-auto space-x-52 flex flex-row justify-center items-center p-16 2xl:p-0 w-full 2xl:w-3/4'>
+          <div className='mx-auto flex flex-row justify-between items-center p-16 2xl:p-0 w-full 2xl:w-3/4'>
             <div className='flex flex-col space-y-4 w-full'>
                 <div className='flex flex-col heading items-start flex-grow'>
                     <p className='text-6xl font-bold text-red-800'>INSTEC</p> 
@@ -19,7 +19,7 @@ const MainServicesPage = () => {
                     <p className='text-center'>View all services</p>
                 </Link>
             </div>
-            <img className='hidden lg:block w-3/5 h-[45vh]' src='../static/images/earth-2.jpg' alt=''></img>
+            <img className='hidden lg:block w-3/5' src='../static/images/earth-2.jpg' alt=''></img>
           </div>
         </div>
         <div className='w-full min-h-[100vh] lg:min-h-[50vh]'>
@@ -322,10 +322,9 @@ const MainServicesPage = () => {
                 </div>
             </div>
             <div className='w-full min-h-[50vh]'>
-                <div className='min-h-[50vh]'>
-                    <img className='rounded mx-auto w-full lg:w-3/5 h-full lg:h-80' src='../static/images/gradient-2.png' alt=''></img>
-                    <div className='mx-auto h-full w-full lg:w-1/2 flex flex-col lg:flex-row items-center justify-center space-x-2 lg:space-x-12 -translate-y-[20vh] text-white'>
-                        <div className='w-full flex flex-col lg:flex-row justify-between'>
+                <div className="w-3/4 lg:w-1/2 mx-auto h-full bg-[url('static/images/gradient-1.png')] p-2 lg:p-8">
+                    <div className="mx-auto h-52 w-full flex flex-col lg:flex-row items-center justify-center space-x-2 lg:space-x-12 text-white">
+                        <div className='w-full flex flex-col lg:flex-row justify-evenly'>
                             <div className='w-full text-2xl lg:text-5xl pl-4 lg:pl-0'>
                                 <p className=''>Have Questions? Contact Us.</p>
                             </div>
