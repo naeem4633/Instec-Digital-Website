@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { ResetPage } from '../ResetPage'
 
 const IncidentResponse = () => {
   return (
     <section className='flex flex-col space-y-8 items-center w-full text-white'>
+        <ResetPage/>
         <div className="flex w-full bg-[url('static/images/gradient-2.png')]">
             <div className="w-full lg:w-3/4 flex flex-col mx-auto space-y-12 p-0 lg:p-8 text-gray-200 mb-8">
                 <div className="w-full flex flex-col lg:flex-row p-0 lg:p-16 items-start rounded lg:tracking-wider">
