@@ -10,9 +10,8 @@ const LinuxTraining = () => {
   return (
     <section className='trainings flex flex-col pb-8 space-y-8 items-center min-h-[100vh] w-full text-black'>
         <ResetPage />
-        <div className='w-full h-[90vh] lg:h-[100vh]'>
-            <img src='../static/images/gradient-1.png' className='w-full h-full'></img>
-            <div className='w-full h-full flex flex-col justify-evenly -translate-y-[90vh]'>
+        <div className="flex w-full h-[100vh] bg-[url('static/images/gradient-1.png')]">
+            <div className='w-full h-full flex flex-col justify-evenly'>
                 <div className='mx-auto space-x-52 flex flex-row justify-center items-center w-1/2 '>
                     <div className='flex flex-col heading items-start'>
                         <p className='text-6xl font-bold text-red-800'>Linux</p> 
@@ -20,7 +19,7 @@ const LinuxTraining = () => {
                     </div>
                     <img className='hidden lg:block' src='../static/images/linux.png'></img>
                 </div>
-                <div className='h-1/2 p-3 lg:p-12 flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:justify-between w-full mx-auto items-center lg:text-xl text-center font-semibold justify-evenly text-white'>
+                <div className='p-3 lg:p-12 flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:justify-between w-full mx-auto items-center lg:text-xl text-center font-semibold justify-evenly text-white'>
                     <div>
                         <p className='lg:tracking-wide'>Certified Information Systems Auditor (CISA) Course</p>
                     </div>

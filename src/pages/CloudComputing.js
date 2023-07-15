@@ -9,9 +9,8 @@ const CloudComputing = () => {
   return (
     <section className='flex flex-col pb-8 space-y-8 items-center min-h-[100vh] w-full text-black'>
         <ResetPage/>
-        <div className='w-full h-[90vh] lg:h-[100vh]'>
-          <img src='../static/images/gradient-1.png' className='w-full h-full'></img>
-          <div className='mx-auto h-full space-x-52 flex flex-row justify-center items-center w-1/2 -translate-y-[100vh]'>
+        <div className="flex w-full h-[100vh] bg-[url('static/images/gradient-1.png')]">
+          <div className='mx-auto h-full space-x-52 flex flex-row justify-center items-center w-1/2'>
             <div className='flex flex-col heading items-start'>
                 <p className='text-white text-6xl font-bold '>Cloud Computing</p>
                 <p className='text-6xl font-bold text-red-800'>Services</p> 

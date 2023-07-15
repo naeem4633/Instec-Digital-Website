@@ -7,9 +7,8 @@ const MainServicesPage = () => {
     <>
     <section className='flex flex-col pb-8 space-y-12 items-center min-h-[100vh] w-full text-black bg-gray-100'>
         <ResetPage />
-        <div className='w-full h-[100vh]'>
-          <img src='../static/images/gradient-2.png' className='w-full h-full' alt=''></img>
-          <div className='mx-auto space-x-52 flex flex-row justify-center items-center w-3/4 -translate-y-[70vh]'>
+        <div className="flex justify-center w-full h-[100vh] bg-[url('static/images/gradient-2.png')]">
+          <div className='mx-auto space-x-52 flex flex-row justify-center items-center p-16 2xl:p-0 w-full 2xl:w-3/4'>
             <div className='flex flex-col space-y-4 w-full'>
                 <div className='flex flex-col heading items-start flex-grow'>
                     <p className='text-6xl font-bold text-red-800'>INSTEC</p> 

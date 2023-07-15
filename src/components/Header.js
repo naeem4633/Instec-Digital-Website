@@ -82,7 +82,7 @@ const Header = () => {
                 <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white' onClick={handleTrainingClick}>Trainings</p>
                 <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white' onClick={handleServicesClick}>Services</p>
                 <Link to={'/contact-us'}>
-                  <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white'>Contact Us</p>
+                  <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white hover:border-2 hover:border-black'>Contact Us</p>
                 </Link>
                 <Link to={'/incident-response'}>
                   <p className='p-4 bg-red-800 hover:bg-gray-200 hover:text-black hover:scale-95 transition-all duration-300 cursor-pointer font-semibold'>Incident Response Help</p>
@@ -114,6 +114,11 @@ const Header = () => {
                 </div>
                 {isTrainingOpen && (
                   <ul className='dropdown-menu flex flex-col space-y-2 text-sm'>
+                    <Link to={'/trainings'} onClick={() => setShowMenu(false)}>
+                      <li className='p-2'>
+                        All Trainings
+                      </li>
+                    </Link>
                     <Link to={'/cisa-training'} onClick={() => setShowMenu(false)}>
                       <li className='p-2'>
                         CISA Training
@@ -154,6 +159,11 @@ const Header = () => {
                 </div>
                 {isServicesOpen && (
                   <ul className='dropdown-menu flex flex-col space-y-2 text-sm'>
+                    <Link to={'/services'} onClick={() => setShowMenu(false)}>
+                      <li className='p-2'>
+                        All Services
+                      </li>
+                    </Link>
                     <Link to={'/information-security'} onClick={() => setShowMenu(false)}>
                       <li className='p-2'>
                         Information Security
