@@ -95,7 +95,7 @@ const Header = () => {
                   <p className='p-4 bg-red-800 hover:bg-gray-200 hover:text-black hover:scale-95 transition-all duration-300 cursor-pointer font-semibold'>Incident Response Help</p>
                 </Link>
             </div>
-            <div className='md:hidden flex items-center space-x-4 w-1/5 justify-end'>
+            <div className='md:hidden flex items-center space-x-4 w-1/5 justify-end m-1'>
                 <img className='w-10 h-10 cursor-pointer' src='../static/images/header-menu.png' alt='menu' onClick={handleMenuClick}></img>
             </div>
         </div>
