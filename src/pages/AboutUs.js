@@ -34,7 +34,7 @@ const AboutUs = () => {
             <div className='mx-auto w-full lg:w-1/2 border flex flex-col lg:flex-row p-4 lg:p-16 items-center justify-center rounded lg:tracking-wider text-sm lg:text-lg lg:space-x-8'>
                 <div className='w-full flex flex-col space-y-12 text-lg lg:text-xl'>
                     <p className='text-center w-full font-semibold text-xl lg:text-3xl'>Some Stats About Our Clients</p>
-                    <div className='w-full flex flex-col lg:flex-row justify-between text-center'>
+                    <div className='w-full flex flex-col lg:flex-row justify-between items-baseline text-center'>
                         <div className='p-4 space-y-2'>
                             <p className='text-red-800 font-semibold'>300</p>
                             <p className='font-semibold'>Customers</p>
