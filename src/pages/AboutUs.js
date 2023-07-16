@@ -35,15 +35,15 @@ const AboutUs = () => {
                 <div className='w-full flex flex-col space-y-12 text-lg lg:text-xl'>
                     <p className='text-center w-full font-semibold text-xl lg:text-3xl'>Some Stats About Our Clients</p>
                     <div className='w-full flex flex-col lg:flex-row justify-between items-baseline text-center'>
-                        <div className='p-4 space-y-2'>
+                        <div className='p-4 space-y-2 lg:w-1/3'>
                             <p className='text-red-800 font-semibold'>300</p>
                             <p className='font-semibold'>Customers</p>
                         </div>
-                        <div className='p-4 space-y-2'>
+                        <div className='p-4 space-y-2 lg:w-1/3'>
                             <p className='text-red-800 font-semibold'>250,000+</p>
                             <p className='font-semibold'>Users</p>
                         </div>
-                        <div className='p-4 space-y-2'>
+                        <div className='p-4 space-y-2 lg:w-1/3'>
                             <p className='text-red-800 font-semibold'>450</p>
                             <p className='font-semibold'>Incidents Handled</p>
                         </div>
