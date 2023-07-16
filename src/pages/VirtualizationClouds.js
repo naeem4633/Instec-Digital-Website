@@ -15,7 +15,7 @@ const VirtualizationClouds = () => {
                 <p className='text-white text-5xl lg:text-6xl font-bold '>Virtualization &</p>
                 <p className='text-5xl lg:text-6xl font-bold text-red-800'>Clouds</p> 
             </div>
-            <img className='hidden lg:block' src='../static/images/computer-1.png'></img>
+            <img className='hidden lg:block' src='../static/images/computer-1.png' alt=''></img>
           </div>
         </div>
         <div className='w-full flex flex-col space-y-4 p-8'>
@@ -26,7 +26,7 @@ const VirtualizationClouds = () => {
         <div className='w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-0 lg:p-8 text-white'>
             <div className='w-full flex flex-row p-4 lg:p-16 bg-red-800 items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg'>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
-                    <img className='mx-auto w-20 h-20' src='../static/images/datacenter-virtual.png'></img>
+                    <img className='mx-auto w-20 h-20' src='../static/images/datacenter-virtual.png' alt=''></img>
                 </div>
                 <div className='w-full lg:w-3/4 flex flex-col justify-start space-y-6 items-start'>
                     <div className='flex flex-col text-white space-y-4'>
@@ -39,15 +39,15 @@ const VirtualizationClouds = () => {
                         <p className='mt-8'>Our Services Include:</p>
                         <ul className='flex flex-col w-full lg:w-3/4 space-y-4 p-4'>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point.png' alt=''></img>
                                 <p>Assessment of Infrastructure to define the Cloud strategy</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point.png' alt=''></img>
                                 <p>Consolidation of applications and Hardware to simplify IT Infrastructure and its recovery</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point.png' alt=''></img>
                                 <p>Operation and Design Verification & Validation</p>
                             </li>
                         </ul>
@@ -57,7 +57,7 @@ const VirtualizationClouds = () => {
 
             <div className='w-full   flex flex-row p-4 lg:p-16 bg-gray-200 text-black items-center rounded text-sm lg:text-lg'>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
-                    <img className='mx-auto w-20 h-20' src='../static/images/virtual-black.png'></img>
+                    <img className='mx-auto w-20 h-20' src='../static/images/virtual-black.png' alt=''></img>
                 </div>
                 <div className='w-full lg:w-3/4 flex flex-col justify-start space-y-6 items-start'>
                     <div className='flex flex-col space-y-4'>
@@ -76,7 +76,7 @@ const VirtualizationClouds = () => {
             </div>
             <div className='w-full flex flex-row p-4 lg:p-16 bg-red-800 items-center rounded text-sm lg:text-lg'>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
-                    <img className='mx-auto w-20 h-20' src='../static/images/enterprise.png'></img>
+                    <img className='mx-auto w-20 h-20' src='../static/images/enterprise.png' alt=''></img>
                 </div>
                 <div className='w-full lg:w-3/4 flex flex-col justify-start space-y-6 items-start'>
                     <div className='flex flex-col text-white space-y-4'>

@@ -16,7 +16,7 @@ const ErrorPage = () => {
             <Link to={'/'} className='w-full lg:w-3/4 items-start p-8'>
                 <div className='mx-auto flex flex-row items-center justify-evenly w-52 h-12 rounded text-white font-semibold bg-red-800 hover:bg-gray-200 hover:border-2 hover:border-red-800 hover:text-black hover:-translate-y-1 transition-transform tracking-wider'>
                     <button className=''>Back to Home Page</button>
-                    <img className='w-4 h-4' src='../static/images/right-arrow-white.png'></img>
+                    <img className='w-4 h-4' src='../static/images/right-arrow-white.png' alt=''></img>
                 </div>
             </Link>
         </div>

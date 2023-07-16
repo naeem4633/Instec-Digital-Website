@@ -15,7 +15,7 @@ const DataCenterServices = () => {
                 <p className='text-white text-6xl font-bold '>Data Center</p>
                 <p className='text-6xl font-bold text-red-800'>Services</p> 
             </div>
-            <img className='hidden lg:block' src='../static/images/data-center-cover.png'></img>
+            <img className='hidden lg:block' src='../static/images/data-center-cover.png' alt=''></img>
           </div>
         </div>
         <div className='w-full flex flex-col space-y-4 p-8 text-sm lg:text-xl'>
@@ -33,7 +33,7 @@ const DataCenterServices = () => {
         <div className='w-full lg:w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-8 text-white'>
             <div className='w-full flex flex-row p-4 lg:p-16 bg-red-800 items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg'>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
-                    <img className='mx-auto lg:w-20 lg:h-20' src='../static/images/data-center-security.png'></img>
+                    <img className='mx-auto lg:w-20 lg:h-20' src='../static/images/data-center-security.png' alt=''></img>
                 </div>
                 <div className='w-full lg:w-3/4 flex flex-col justify-start space-y-6 items-start'>
                     <div className='flex flex-col text-white space-y-2'>
@@ -47,27 +47,27 @@ const DataCenterServices = () => {
                         <p className='mt-8'>Our Data Center audit deliverable typically include:</p>
                         <ul className='flex flex-col w-full lg:w-3/4 space-y-4 p-4'>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point.png' alt=''></img>
                                 <p>Technical audit report of the M&E infrastructure</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point.png' alt=''></img>
                                 <p>Environmental conditioning report</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point.png' alt=''></img>
                                 <p>Verification of management systems</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point.png' alt=''></img>
                                 <p>Reliability analysis</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point.png' alt=''></img>
                                 <p>Data Centers Safety profile</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point.png' alt=''></img>
                                 <p>Physical Security assessment</p>
                             </li>
                         </ul>

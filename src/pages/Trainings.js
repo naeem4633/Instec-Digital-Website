@@ -14,7 +14,7 @@ const Trainings = () => {
                     <p className='text-6xl font-bold text-red-800'>Trainings</p> 
                 </div>
             </div>
-            <img className='hidden lg:block' src='../static/images/online-training.png'></img>
+            <img className='hidden lg:block' src='../static/images/online-training.png' alt=''></img>
           </div>
         </div>
         <div className='w-full'>
@@ -47,7 +47,7 @@ const Trainings = () => {
         <div className='w-full min-h-[50vh]'>
             <div className='mx-auto h-full  w-full lg:w-3/4 flex flex-col lg:flex-row items-center justify-center  space-x-0 lg:space-x-12'>
                 <div className='hidden lg:block  p-2 lg:p-12 h-full w-full lg:w-1/2'>
-                    <img className='drop-shadow-lg' src='../static/images/business-cont.jpg'></img>
+                    <img className='drop-shadow-lg' src='../static/images/business-cont.jpg' alt=''></img>
                 </div>
                 <div className='h-3/4 w-full lg:w-1/2 p-4 flex flex-col  space-y-2 lg:space-y-8 items-start'>
                     <div className='flex flex-col  space-y-2 lg:space-y-8'>
@@ -60,7 +60,7 @@ const Trainings = () => {
                     </div> 
                 </div>
                 <div className='lg:hidden  p-2 lg:p-12 h-full w-full lg:w-1/2'>
-                    <img className='drop-shadow-lg' src='../static/images/business-cont.jpg'></img>
+                    <img className='drop-shadow-lg' src='../static/images/business-cont.jpg' alt=''></img>
                 </div>
             </div>
         </div>
@@ -77,14 +77,14 @@ const Trainings = () => {
                     </div> 
                 </div>
                 <div className=' p-2 lg:p-12 h-full w-full lg:w-1/2'>
-                    <img className='drop-shadow-lg' src='../static/images/operating-system.jpg'></img>
+                    <img className='drop-shadow-lg' src='../static/images/operating-system.jpg' alt=''></img>
                 </div>
             </div>
         </div>
         <div className='w-full min-h-[50vh]'>
             <div className='mx-auto h-full  w-full lg:w-3/4 flex flex-col lg:flex-row items-center justify-center  space-x-0 lg:space-x-12'>
                 <div className='hidden lg:block  p-2 lg:p-12 h-full w-full lg:w-1/2'>
-                    <img className='drop-shadow-lg' src='../static/images/startup.jpg'></img>
+                    <img className='drop-shadow-lg' src='../static/images/startup.jpg' alt=''></img>
                 </div>
                 <div className='h-3/4 w-full lg:w-1/2 p-4 flex flex-col  space-y-2 lg:space-y-8 items-start'>
                     <div className='flex flex-col  space-y-2 lg:space-y-8'>
@@ -100,7 +100,7 @@ const Trainings = () => {
                     </div> 
                 </div>
                 <div className='lg:hidden  p-2 lg:p-12 h-full w-full lg:w-1/2'>
-                    <img className='drop-shadow-lg' src='../static/images/business-cont.jpg'></img>
+                    <img className='drop-shadow-lg' src='../static/images/business-cont.jpg' alt=''></img>
                 </div>
             </div>
         </div>
@@ -117,14 +117,14 @@ const Trainings = () => {
                     </div> 
                 </div>
                 <div className=' p-2 lg:p-12 h-full w-full lg:w-1/2'>
-                    <img className='drop-shadow-lg' src='../static/images/laptop.jpg'></img>
+                    <img className='drop-shadow-lg' src='../static/images/laptop.jpg' alt=''></img>
                 </div>
             </div>
         </div>
         <div className='w-full min-h-[50vh]'>
             <div className='mx-auto h-full  w-full lg:w-3/4 flex flex-col lg:flex-row items-center justify-center  space-x-0 lg:space-x-12'>
                 <div className='hidden lg:block  p-2 lg:p-12 h-full w-full lg:w-1/2'>
-                    <img className='drop-shadow-lg' src='../static/images/information-security.jpg'></img>
+                    <img className='drop-shadow-lg' src='../static/images/information-security.jpg' alt=''></img>
                 </div>
                 <div className='h-3/4 w-full lg:w-1/2 p-4 flex flex-col  space-y-2 lg:space-y-8 items-start'>
                     <div className='flex flex-col  space-y-2 lg:space-y-8'>
@@ -137,7 +137,7 @@ const Trainings = () => {
                     </div> 
                 </div>
                 <div className='lg:hidden p-12 h-full w-full lg:w-1/2'>
-                    <img className='drop-shadow-lg' src='../static/images/business-cont.jpg'></img>
+                    <img className='drop-shadow-lg' src='../static/images/business-cont.jpg' alt=''></img>
                 </div>
             </div>
         </div>

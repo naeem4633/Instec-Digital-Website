@@ -15,7 +15,7 @@ const Services = () => {
                     <p className='text-6xl font-bold text-red-800'>Services</p> 
                 </div>
             </div>
-            <img className='hidden lg:block' src='../static/images/first.png'></img>
+            <img className='hidden lg:block' src='../static/images/first.png' alt=''></img>
           </div>
         </div>
           <div className='w-full 2xl:w-3/4 grid grid-cols-1 lg:grid-cols-3 mx-auto min-h-[100vh] gap-8'>

@@ -15,7 +15,7 @@ const WebDesign = () => {
                 <p className='text-white text-5xl lg:text-6xl font-bold '>Web Design &</p>
                 <p className='text-5xl lg:text-6xl font-bold text-red-800'>Development</p> 
             </div>
-            <img className='hidden lg:block' src='../static/images/webDev.png'></img>
+            <img className='hidden lg:block' src='../static/images/webDev.png' alt=''></img>
           </div>
         </div>
         <div className='w-full flex flex-col space-y-4 p-8'>
@@ -28,7 +28,7 @@ const WebDesign = () => {
         <div className=' w-full lg:w-3/4 flex flex-col mx-auto space-y-[20vh] p-8 text-white'>
             <div className='w-full flex flex-row  p-4 lg:p-16 bg-red-800 items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg '>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
-                    <img className='mx-auto w-20 h-20' src='../static/images/web-dev.png'></img>
+                    <img className='mx-auto w-20 h-20' src='../static/images/web-dev.png' alt=''></img>
                 </div>
                 <div className=' w-full lg:w-3/4 flex flex-col justify-start space-y-6 items-start'>
                     <p className=' text-xl lg:text-3xl font-semibold text-white'>Strategic Web Development</p>
@@ -39,42 +39,42 @@ const WebDesign = () => {
                         <p className='mt-8'>Our Services Include:</p>
                         <ul className='flex flex-col w-full space-y-4 p-4'>
                             <li className='flex flex-row space-x-4 second-group'>
-                                <img className='mt-1 w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='mt-1 w-4 h-4' src='../static/images/point.png' alt=''></img>
                                 <div className='flex flex-col'>
                                     <p className='font-bold'>Content Management</p>
                                     <p>Easy-to-use CMS options for content managers, yet scalable and powerful for advanced functionality.</p>
                                 </div>
                             </li>
                             <li className='flex flex-row space-x-4 second-group'>
-                                <img className='mt-1 w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='mt-1 w-4 h-4' src='../static/images/point.png' alt=''></img>
                                 <div className='flex flex-col'>
                                     <p className='font-bold'>Information Architecture</p>
                                     <p>Thorough process for sitemap development, taxonomy, and wireframing to define user pathways and content hierarchies.</p>
                                 </div>
                             </li>
                             <li className='flex flex-row space-x-4 second-group'>
-                                <img className='mt-1 w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='mt-1 w-4 h-4' src='../static/images/point.png' alt=''></img>
                                 <div className='flex flex-col'>
                                     <p className='font-bold'>Usability Testing</p>
                                     <p>Expert, unbiased user experience evaluations employing questionnaires, focus groups, and functional prototypes.</p>
                                 </div>
                             </li>
                             <li className='flex flex-row space-x-4 second-group'>
-                                <img className='mt-1 w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='mt-1 w-4 h-4' src='../static/images/point.png' alt=''></img>
                                 <div className='flex flex-col'>
                                     <p className='font-bold'>Web Strategy</p>
                                     <p>Expert, unbiased user experience evaluations employing questionnaires, focus groups, and functional prototypes.</p>
                                 </div>
                             </li>
                             <li className='flex flex-row space-x-4 second-group'>
-                                <img className='mt-1 w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='mt-1 w-4 h-4' src='../static/images/point.png' alt=''></img>
                                 <div className='flex flex-col'>
                                     <p className='font-bold'>Responsive & Mobile</p>
                                     <p>Standardized responsive design solutions for tablet and smartphone users. Need a branded app? We've got you covered.</p>
                                 </div>
                             </li>
                             <li className='flex flex-row space-x-4 second-group'>
-                                <img className='mt-1 w-4 h-4' src='../static/images/point.png'></img>
+                                <img className='mt-1 w-4 h-4' src='../static/images/point.png' alt=''></img>
                                 <div className='flex flex-col'>
                                     <p className='font-bold'>Life Cycle Support</p>
                                     <p>Expert user and technical support services provided by dedicated, in-house support staff.</p>

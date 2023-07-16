@@ -71,19 +71,23 @@ const Header = () => {
   }, []);
   return (
     <section className='sticky top-0 w-full h-16 color-secondary text-white z-50'>
-        <div className='w-full flex justify-between px-2'>
-            <Link to={'/'}>
-              <img className='w-44 h-16 mr-4 scale-125 translate-x-10' src='../static/images/logo.png' alt='logo'></img>
-            </Link>
-            <div className='hidden md:flex items-center'>
+        <div className='w-full flex justify-between px-2 space-x-16'>
+            <div className='flex flex-row translate-x-10 space-x-16'>
+              <Link to={'/'}>
+                <img className='w-44 h-16 mr-4 scale-125' src='../static/images/logo.png' alt='logo'></img>
+              </Link>
+              <div className='hidden md:flex flex-row items-center'>
                 <Link to={'/about-us'}>
                   <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white'>About</p>
                 </Link>
-                <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white' onClick={handleTrainingClick}>Trainings</p>
-                <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white' onClick={handleServicesClick}>Services</p>
+                  <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white' onClick={handleTrainingClick}>Trainings</p>
+                  <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white' onClick={handleServicesClick}>Services</p>
                 <Link to={'/contact-us'}>
                   <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white hover:border-2 hover:border-black'>Contact Us</p>
                 </Link>
+              </div>
+            </div>
+            <div className='hidden md:flex items-center'>
                 <Link to={'/incident-response'}>
                   <p className='p-4 bg-red-800 hover:bg-gray-200 hover:text-black hover:scale-95 transition-all duration-300 cursor-pointer font-semibold'>Incident Response Help</p>
                 </Link>
@@ -109,8 +113,8 @@ const Header = () => {
               >
                 <div className='w-full flex flex-row justify-between'>
                   <p>Trainings</p>
-                  {!isTrainingOpen && (<img className='w-6 h-6' src='../static/images/down-arrow.png'></img>)}
-                  {isTrainingOpen && (<img className='w-6 h-6 rotate-180' src='../static/images/down-arrow.png'></img>)}
+                  {!isTrainingOpen && (<img className='w-6 h-6' src='../static/images/down-arrow.png' alt=''></img>)}
+                  {isTrainingOpen && (<img className='w-6 h-6 rotate-180' src='../static/images/down-arrow.png' alt=''></img>)}
                 </div>
                 {isTrainingOpen && (
                   <ul className='dropdown-menu flex flex-col space-y-2 text-sm'>
@@ -154,8 +158,8 @@ const Header = () => {
               >
                 <div className='w-full flex flex-row justify-between'>
                   <p>Services</p>
-                  {!isServicesOpen && (<img className='w-6 h-6' src='../static/images/down-arrow.png'></img>)}
-                  {isServicesOpen && (<img className='w-6 h-6 rotate-180' src='../static/images/down-arrow.png'></img>)}
+                  {!isServicesOpen && (<img className='w-6 h-6' src='../static/images/down-arrow.png' alt=''></img>)}
+                  {isServicesOpen && (<img className='w-6 h-6 rotate-180' src='../static/images/down-arrow.png' alt=''></img>)}
                 </div>
                 {isServicesOpen && (
                   <ul className='dropdown-menu flex flex-col space-y-2 text-sm'>
@@ -220,7 +224,7 @@ const Header = () => {
         )}
 
         {showServices && (
-        <div className='services w-full color-secondary text-white drop-shadow-2xl' ref={servicesRef}>
+        <div className='ml-[20vh] services w-3/5 color-secondary text-white drop-shadow-2xl' ref={servicesRef}>
           <div className='flex flex-row h-full'>
             <div className='w-1/4 flex flex-col justify-center p-4'>
               <Link to={'/services'} className='w-full p-8 flex flex-col items-center space-y-4 hover:-translate-y-3 transition-transform'>
@@ -229,7 +233,7 @@ const Header = () => {
               </Link>
             </div>
             <div className='my-6 border border-gray-400'></div>
-            <div className='w-1/4 flex flex-col p-8'>
+            <div className='w-1/2 flex flex-col p-8'>
               <ul className='header h-full'>
               <Link to={'/information-security'}>
                 <li onMouseEnter={() => handleItemHover('Information Security', '/information-security')}>Information Security</li>
@@ -255,17 +259,23 @@ const Header = () => {
               </ul>
             </div>
             <div className='my-6 border border-gray-400'></div>
-            <Link to={hoveredLink} className='w-1/4 flex flex-col p-8 ml-8'>
-              <ul className='h-full space-y-8'>
-                <p className='text-xl font-bold cursor-pointer'>{hoveredItem}</p>
-                <button className='w-32 h-12 rounded text-white font-semibold bg-red-800 hover:bg-gray-200 hover:border-2 hover:border-red-800 hover:text-black hover:-translate-y-1 transition-transform tracking-wider'>Explore</button>              </ul>
-            </Link>
-          </div>
+              <div className='flex flex-col justify-between'>
+                <Link to={hoveredLink} className='w-1/4 flex flex-col p-8'>
+                  <ul className='h-full space-y-4'>
+                    <p className='w-52 cursor-pointer'>{hoveredItem}</p>
+                    <button className='w-32 h-10 rounded text-white font-semibold bg-red-800 hover:bg-gray-200 hover:border-2 hover:border-red-800 hover:text-black hover:-translate-y-1 transition-transform tracking-wider'>Explore</button>              
+                  </ul>
+                </Link>
+                <Link to={'/services'} className='w-1/2 flex flex-col p-8'>
+                  <button className='w-52 h-10 rounded text-white font-semibold bg-red-800 hover:bg-gray-200 hover:border-2 hover:border-red-800 hover:text-black hover:-translate-y-1 transition-transform tracking-wider'>View All Services</button>
+                </Link>
+              </div>
+            </div>
         </div>
         )}
 
         {showTraining && (
-        <div className='training w-full color-secondary text-white drop-shadow-2xl' ref={trainingRef}>
+        <div className='ml-[20vh] training w-3/5 color-secondary text-white drop-shadow-2xl' ref={trainingRef}>
             <div className='flex flex-row h-full'>
                 <div className='w-1/4 flex flex-col justify-center p-4'>
                     <Link to={'/trainings'} className='w-full p-8 flex flex-col items-center space-y-4 hover:-translate-y-3 transition-transform'>
@@ -274,7 +284,7 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className='my-6 border border-gray-400'></div>
-                <div className='w-1/4 flex flex-col p-8'>
+                <div className='w-1/2 flex flex-col p-8'>
                     <ul className='header h-full'>
                         <Link to={'/cisa-training'}>
                           <li onMouseEnter={() => handleItemHover('CISA Training', '/cisa-training')}>CISA Training</li>
@@ -294,12 +304,17 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className='my-6 border border-gray-400'></div>
-                <Link to={hoveredLink} className='w-1/4 flex flex-col p-8 ml-8'>
-                    <ul className='h-full space-y-8'>
-                        <p className='text-xl font-bold cursor-pointer'>{hoveredItem}</p>
-                        <button className='w-32 h-12 rounded text-white font-semibold bg-red-800 hover:bg-gray-200 hover:border-2 hover:border-red-800 hover:text-black hover:-translate-y-1 transition-transform tracking-wider'>Explore</button>
-                    </ul>
-                </Link>
+                <div className='flex flex-col justify-between'>
+                  <Link to={hoveredLink} className='w-1/4 flex flex-col p-8'>
+                      <ul className='w-full h-full space-y-4'>  
+                          <p className='w-52 cursor-pointer'>{hoveredItem}</p>
+                          <button className='w-32 h-10 rounded text-white font-semibold bg-red-800 hover:bg-gray-200 hover:border-2 hover:border-red-800 hover:text-black hover:-translate-y-1 transition-transform tracking-wider'>Explore</button>
+                      </ul>
+                  </Link>
+                  <Link to={'/trainings'} className='w-1/2 flex flex-col p-8'>
+                      <button className='w-52 h-10 rounded text-white font-semibold bg-red-800 hover:bg-gray-200 hover:border-2 hover:border-red-800 hover:text-black hover:-translate-y-1 transition-transform tracking-wider'>View All Trainings</button>
+                  </Link>
+                </div>
             </div>
         </div>
         )}

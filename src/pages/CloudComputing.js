@@ -15,7 +15,7 @@ const CloudComputing = () => {
                 <p className='text-white text-6xl font-bold '>Cloud Computing</p>
                 <p className='text-6xl font-bold text-red-800'>Services</p> 
             </div>
-            <img className='hidden lg:block' src='../static/images/online-training.png'></img>
+            <img className='hidden lg:block' src='../static/images/online-training.png' alt=''></img>
           </div>
         </div>
         <div className='w-full flex flex-col space-y-4 p-8'>
@@ -26,7 +26,7 @@ const CloudComputing = () => {
         <div className=' w-full lg:w-3/4 flex flex-col mx-auto space-y-[20vh] p-0 lg:p-8 text-white'>
             <div className='w-full flex flex-row  p-4 lg:p-16 bg-gray-200 text-black items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg'>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
-                    <img className='mx-auto w-20 h-20' src='../static/images/cloud-service-black.png'></img>
+                    <img className='mx-auto w-20 h-20' src='../static/images/cloud-service-black.png' alt=''></img>
                 </div>
                 <div className=' w-full lg:w-3/4 flex flex-col justify-start space-y-6 items-start'>
                     <p className=' text-xl lg:text-3xl font-semibold'>Your Datacenter in the Cloud</p>
@@ -37,15 +37,15 @@ const CloudComputing = () => {
                         <p className='mt-8'>Our Services Include:</p>
                         <ul className='flex flex-col  w-full lg:w-3/4 space-y-4 p-4'>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png' alt=''></img>
                                 <p>Assessment of Infrastructure to define the Cloud strategy</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png' alt=''></img>
                                 <p>Migration of applications to simplify IT Infrastructure and its recovery</p>
                             </li>
                             <li className='flex flex-row items-center space-x-4 second-group'>
-                                <img className='w-4 h-4' src='../static/images/point-black.png'></img>
+                                <img className='w-4 h-4' src='../static/images/point-black.png' alt=''></img>
                                 <p>Operation and Design Verification & Validation</p>
                             </li>
                         </ul>
@@ -55,7 +55,7 @@ const CloudComputing = () => {
 
             <div className='w-full flex flex-row  p-4 lg:p-16 bg-red-800 items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg'>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
-                    <img className='mx-auto w-20 h-20' src='../static/images/backup.png'></img>
+                    <img className='mx-auto w-20 h-20' src='../static/images/backup.png' alt=''></img>
                 </div>
                 <div className=' w-full lg:w-3/4 flex flex-col justify-start space-y-6 items-start'>
                     <p className=' text-xl lg:text-3xl font-semibold text-white'>Disaster Recovery in the Cloud</p>
@@ -70,7 +70,7 @@ const CloudComputing = () => {
             </div>
             <div className='w-full flex flex-row  p-4 lg:p-16 bg-gray-200 text-black items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg'>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
-                    <img className='mx-auto w-20 h-20' src='../static/images/cloud-upload-black.png'></img>
+                    <img className='mx-auto w-20 h-20' src='../static/images/cloud-upload-black.png' alt=''></img>
                 </div>
                 <div className=' w-full lg:w-3/4 flex flex-col justify-start space-y-6 items-start'>
                     <p className=' text-xl lg:text-3xl font-semibold'>Migrate Enterprise Applications to the Cloud</p>

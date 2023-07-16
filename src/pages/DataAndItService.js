@@ -14,7 +14,7 @@ const DataAndItService = () => {
                 <p className='text-white text-6xl font-bold'>Data And IT</p>
                 <p className='text-6xl font-bold text-red-800'>Services</p> 
             </div>
-            <img className='hidden lg:block' src='../static/images/first.png'></img>
+            <img className='hidden lg:block' src='../static/images/first.png' alt=''></img>
           </div>
         </div>
         <div className='w-full flex flex-col space-y-4 p-8'>
@@ -24,7 +24,7 @@ const DataAndItService = () => {
         <div className='w-3/4 flex flex-col mx-auto space-y-[10vh] lg:space-y-[20vh] p-0 lg:p-8 text-white text-sm lg:text-lg'>
             <div className='w-full flex flex-row p-4 lg:p-16 bg-red-800 items-center rounded drop-shadow-2xl lg:tracking-wider'>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
-                    <img className='mx-auto w-20 h-20' src='../static/images/migrate.png'></img>
+                    <img className='mx-auto w-20 h-20' src='../static/images/migrate.png' alt=''></img>
                 </div>
                 <div className='w-full lg:w-3/4 flex flex-col justify-start space-y-6 items-start'>
                     <p className='text-xl lg:text-3xl font-semibold text-white'>Data Management</p>
@@ -36,7 +36,7 @@ const DataAndItService = () => {
             </div>
             <div className='w-full flex flex-row p-4 lg:p-16 bg-gray-200 text-black items-center rounded drop-shadow-2xl lg:tracking-wider'>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
-                    <img className='mx-auto w-20 h-20' src='../static/images/circular-black.png'></img>
+                    <img className='mx-auto w-20 h-20' src='../static/images/circular-black.png' alt=''></img>
                 </div>
                 <div className='w-full lg:w-3/4 flex flex-col justify-start space-y-6 items-start'>
                     <p className='text-xl lg:text-3xl font-semibold'>IT Service Management</p>

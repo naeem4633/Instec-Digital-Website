@@ -22,6 +22,7 @@ import About from './pages/About';
 import IncidentResponse from './pages/IncidentResponse';
 import MainServicesPage from './pages/MainServicesPage';
 import ErrorPage from './pages/ErrorPage';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   return (
@@ -47,7 +48,7 @@ function App() {
             <Route path='/incident-response' element={<IncidentResponse/>}/>
             <Route path='/services' element={<Services/>}/>
             <Route path='/contact-us' element={<Contact/>}/>
-            <Route path='/about-us' element={<About/>}/>
+            <Route path='/about-us' element={<AboutUs/>}/>
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </div>

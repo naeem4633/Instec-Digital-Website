@@ -17,7 +17,7 @@ const LinuxTraining = () => {
                         <p className='text-6xl font-bold text-red-800'>Linux</p> 
                         <p className='text-white text-6xl font-bold'>Training</p>
                     </div>
-                    <img className='hidden lg:block' src='../static/images/linux.png'></img>
+                    <img className='hidden lg:block' src='../static/images/linux.png' alt=''></img>
                 </div>
                 <div className='p-3 lg:p-12 flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:justify-between w-full mx-auto items-center lg:text-xl text-center font-semibold justify-evenly text-white'>
                     <div>
@@ -26,7 +26,7 @@ const LinuxTraining = () => {
                     <div className='space-y-2 font-normal'>
                         <p>Duration</p>
                         <div className='flex space-x-4'>
-                            <img src='../static/images/clock-white.png' className='w-8 h-8'></img>
+                            <img src='../static/images/clock-white.png' className='w-8 h-8' alt=''></img>
                             <p>5 Days</p>
                         </div>
                     </div>
@@ -38,7 +38,7 @@ const LinuxTraining = () => {
             <div className='w-full flex flex-row bg-gray-200 text-black items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg space-y-6  p-4 lg:p-16'>
                 <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
                     <p className='text-xl lg:text-3xl font-semibold'>Background</p>
-                    <img className='w-20 h-20' src='../static/images/hiring-black.png'></img>
+                    <img className='w-20 h-20' src='../static/images/hiring-black.png' alt=''></img>
                 </div>
                 <div className='flex flex-col space-y-4 w-full lg:w-3/4'>
                     <p className='lg:hidden text-xl font-bold'>Background</p>
@@ -53,21 +53,21 @@ const LinuxTraining = () => {
             <div className='w-full flex flex-row bg-red-800 items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg space-y-6  p-4 lg:p-16'>
                 <div className='hidden w-1/4 lg:flex flex-col items-center space-y-6'>
                     <p className='text-xl lg:text-3xl font-semibold'>Target Audience</p>
-                    <img className='w-20 h-20' src='../static/images/objective.png'></img>
+                    <img className='w-20 h-20' src='../static/images/objective.png' alt=''></img>
                 </div>
                 <div className='flex flex-col'>
                     <ul className='flex flex-col w-full lg:w-3/4 space-y-4 p-4'>
                         <p className='lg:hidden text-xl font-bold'>Target Audience</p>
                         <li className='flex flex-row items-center space-x-4 second-group'>
-                            <img className='w-4 h-4' src='../static/images/point.png'></img>
+                            <img className='w-4 h-4' src='../static/images/point.png' alt=''></img>
                             <p>Microsoft Windows system administrators who need to quickly learn core Enterprise Linux proficiencies</p>
                         </li>
                         <li className='flex flex-row items-center space-x-4 second-group'>
-                            <img className='w-4 h-4' src='../static/images/point.png'></img>
+                            <img className='w-4 h-4' src='../static/images/point.png' alt=''></img>
                             <p>System administrators, network administrators, and other IT professionals who require proficiency performing core tasks in Linux</p>
                         </li>
                         <li className='flex flex-row items-center space-x-4 second-group'>
-                            <img className='w-4 h-4' src='../static/images/point.png'></img>
+                            <img className='w-4 h-4' src='../static/images/point.png' alt=''></img>
                             <p>Non Linux IT professionals on the path to becoming a full time Linux System Administrator</p>
                         </li>
                     </ul>
@@ -78,7 +78,7 @@ const LinuxTraining = () => {
         </div>
         <Link to={'/contact-us'} className='w-full lg:w-3/4 items-start p-8'>
             <div className='mx-auto flex flex-row items-center justify-evenly w-32 h-12 rounded text-white font-semibold bg-red-800 hover:bg-gray-200 hover:border-2 hover:border-red-800 hover:text-black hover:-translate-y-1 transition-transform tracking-wider'>
-                <img className='w-4 h-4' src='../static/images/contact-button.png'></img>
+                <img className='w-4 h-4' src='../static/images/contact-button.png' alt=''></img>
                 <button className=''>Contact Us</button>
             </div>
         </Link>

@@ -15,7 +15,7 @@ const ServiceBusinessContinuity = () => {
                 <p className='text-white text-6xl font-bold '>Business Continuity</p>
                 <p className='text-6xl font-bold text-red-800'>Services</p> 
             </div>
-            <img className='hidden lg:block' src='../static/images/analytics-2.png'></img>
+            <img className='hidden lg:block' src='../static/images/analytics-2.png' alt=''></img>
           </div>
         </div>
         <div className='w-full flex flex-col space-y-4 p-8'>
@@ -127,42 +127,42 @@ const ServiceBusinessContinuity = () => {
             </div>
             <div className='w-full flex flex-row p-4 lg:p-16 bg-gray-200 text-black items-center rounded drop-shadow-2xl lg:tracking-wider text-sm lg:text-lg'>
                 <div className='hidden lg:block w-1/4 items-center space-y-6'>
-                    <img className='mx-auto w-20 h-20' src='../static/images/customer-service-black.png'></img>
+                    <img className='mx-auto w-20 h-20' src='../static/images/customer-service-black.png' alt=''></img>
                 </div>
                 <div className='w-full lg:w-3/4 flex flex-col justify-start space-y-6 items-start'>
                     <p className='text-xl lg:text-3xl font-semibold'>Other Services</p>
                     <div className='w-full lg:w-3/4'>
                         <ul className='flex flex-col w-full space-y-4 p-4'>
                             <li className='flex flex-row space-x-4 second-group'>
-                                <img className='mt-1 w-4 h-4' src='../static/images/point-black.png'></img>
+                                <img className='mt-1 w-4 h-4' src='../static/images/point-black.png' alt=''></img>
                                 <div className='flex flex-col'>
                                     <p className='font-bold'>Evaluation and Assessment</p>
                                     <p>We evaluate the strengths and weaknesses of continuity plans, identify and mitigate areas of potential risk</p>
                                 </div>
                             </li>
                             <li className='flex flex-row space-x-4 second-group'>
-                                <img className='mt-1 w-4 h-4' src='../static/images/point-black.png'></img>
+                                <img className='mt-1 w-4 h-4' src='../static/images/point-black.png' alt=''></img>
                                 <div className='flex flex-col'>
                                     <p className='font-bold'>Planning and Design</p>
                                     <p>We improve your resilience capabilities with cost-optimized recovery planning and design</p>
                                 </div>
                             </li>
                             <li className='flex flex-row space-x-4 second-group'>
-                                <img className='mt-1 w-4 h-4' src='../static/images/point-black.png'></img>
+                                <img className='mt-1 w-4 h-4' src='../static/images/point-black.png' alt=''></img>
                                 <div className='flex flex-col'>
                                     <p className='font-bold'>Implementation and Testing</p>
                                     <p>We help customers in execution, testing, and validation of disaster recovery and continuity plans</p>
                                 </div>
                             </li>
                             <li className='flex flex-row space-x-4 second-group'>
-                                <img className='mt-1 w-4 h-4' src='../static/images/point-black.png'></img>
+                                <img className='mt-1 w-4 h-4' src='../static/images/point-black.png' alt=''></img>
                                 <div className='flex flex-col'>
                                     <p className='font-bold'>Business Continuity Management</p>
                                     <p>We help in reducing risks and improving availability while controlling operational expenses</p>
                                 </div>
                             </li>
                             <li className='flex flex-row space-x-4 second-group'>
-                                <img className='mt-1 w-4 h-4' src='../static/images/point-black.png'></img>
+                                <img className='mt-1 w-4 h-4' src='../static/images/point-black.png' alt=''></img>
                                 <div className='flex flex-col'>
                                     <p className='font-bold'>Disaster Recovery</p>
                                     <p>We design, implement and support solutions to safeguard your key business data, maintain productivity, and limit 
@@ -170,7 +170,7 @@ const ServiceBusinessContinuity = () => {
                                 </div>
                             </li>
                             <li className='flex flex-row space-x-4 second-group'>
-                                <img className='mt-1 w-4 h-4' src='../static/images/point-black.png'></img>
+                                <img className='mt-1 w-4 h-4' src='../static/images/point-black.png' alt=''></img>
                                 <div className='flex flex-col'>
                                     <p className='font-bold'>Cloud based Disaster Recovery</p>
                                     <p>The Cloud offers tremendous options for disaster recovery. We help our customers in building and implementing a 

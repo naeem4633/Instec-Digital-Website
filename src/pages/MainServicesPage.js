@@ -11,7 +11,7 @@ const MainServicesPage = () => {
           <div className='mx-auto flex flex-row justify-between items-center p-16 2xl:p-0 w-full 2xl:w-3/4'>
             <div className='flex flex-col space-y-4 w-full'>
                 <div className='flex flex-col heading items-start flex-grow'>
-                    <p className='text-6xl font-bold text-red-800'>INSTEC</p> 
+                    <p className='text-6xl font-bold text-red-800'>Instec</p> 
                     <p className='text-white text-6xl font-bold '>Digital Systems</p>
                     <p className='text-white text-2xl font-bold mb-6 mt-16'>All Your IT Needs in One Place</p>
                 </div>
@@ -329,7 +329,7 @@ const MainServicesPage = () => {
                                 <p className=''>Have Questions? Contact Us.</p>
                             </div>
                             <div className='w-full flex flex-col space-y-4 items-center'>
-                                <p>INSTEC experts are ready to anwer your questions</p>
+                                <p className='ml-4 lg:ml-0'>INSTEC experts are ready to anwer your questions</p>
                                 <Link to={'/contact-us'} className='flex flex-row items-center justify-start space-x-3 drop-shadow-xl w-3/4 p-4 text-white bg-red-800 font-semibold hover:bg-red-900 rounded transitition-all duration-200'>
                                     <p className='text-center'>Contact Us</p>
                                     <img src='../static/images/right-arrow-white.png' className='w-5 h-5' alt=''></img>
