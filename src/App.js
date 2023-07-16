@@ -18,7 +18,6 @@ import Contact from './pages/Contact';
 import ServiceBusinessContinuity from './pages/ServiceBusinessContinuity';
 import DataCenterServices from './pages/DataCenterServices';
 import DataAndItService from './pages/DataAndItService';
-import About from './pages/About';
 import IncidentResponse from './pages/IncidentResponse';
 import MainServicesPage from './pages/MainServicesPage';
 import ErrorPage from './pages/ErrorPage';
