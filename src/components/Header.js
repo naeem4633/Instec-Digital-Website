@@ -70,12 +70,15 @@ const Header = () => {
     };
   }, []);
   return (
-    <section className='sticky top-0 w-full h-16 color-secondary text-white z-50'>
-        <div className='w-full flex justify-between px-2 space-x-16'>
-            <div className='flex flex-row translate-x-10 space-x-16'>
-              <Link to={'/'}>
-                <img className='w-44 h-16 mr-4 scale-125' src='../static/images/logo.png' alt='logo'></img>
-              </Link>
+    <section className='sticky top-0 w-full h-16 color-secondary text-white z-50 p-1'>
+        <div className='w-full flex justify-between lg:space-x-16 items-center'>
+            <div className='flex flex-row translate-x-4 space-x-16'>
+              <div className='flex items-center space-x-4'>
+                <Link to={'/'}>
+                  <img className='w-16' src='../static/images/instec-logo.png' alt='logo'></img>
+                </Link>
+                <p className='text-xs lg:text-sm font-semibold'>INSTEC DIGITAL SYSTEMS</p>
+              </div>
               <div className='hidden md:flex flex-row items-center'>
                 <Link to={'/about-us'}>
                   <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white'>About</p>
@@ -83,7 +86,7 @@ const Header = () => {
                   <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white' onClick={handleTrainingClick}>Trainings</p>
                   <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white' onClick={handleServicesClick}>Services</p>
                 <Link to={'/contact-us'}>
-                  <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white hover:border-2 hover:border-black'>Contact Us</p>
+                  <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white'>Contact Us</p>
                 </Link>
               </div>
             </div>

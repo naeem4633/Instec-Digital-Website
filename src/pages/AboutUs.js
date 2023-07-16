@@ -32,7 +32,7 @@ const AboutUs = () => {
                 </div>
             </div>
             <div className='mx-auto w-full lg:w-1/2 border flex flex-col lg:flex-row p-4 lg:p-16 items-center justify-center rounded lg:tracking-wider text-sm lg:text-lg lg:space-x-8'>
-                <div className='w-full flex flex-col space-y-12 text-lg lg:text-xl'>
+                <div className='w-full flex flex-col space-y-12 text-lg lg:text-xl 2xl:text-2xl'>
                     <p className='text-center w-full font-semibold text-xl lg:text-3xl'>Some Stats About Our Clients</p>
                     <div className='w-full flex flex-col lg:flex-row justify-between items-baseline text-center'>
                         <div className='p-4 space-y-2 lg:w-1/3'>
