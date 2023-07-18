@@ -6,8 +6,6 @@ const Header = () => {
     const [isServicesOpen, setServicesOpen] = useState(false);
     const [showTraining, setShowTraining] = useState(false);
     const [showServices, setShowServices] = useState(false);
-    const [hoveredItem, setHoveredItem] = useState('');
-    const [hoveredLink, setHoveredLink] = useState('/');
     const servicesRef = useRef(null);
     const trainingRef = useRef(null);
     const [showMenu, setShowMenu] = useState(false);
@@ -34,17 +32,12 @@ const Header = () => {
     setShowServices(true);
   };
 
-  const handleItemHover = (item, link) => {
-    setHoveredItem(item);
-    setHoveredLink(link);
-  };
   
 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (servicesRef.current && !servicesRef.current.contains(event.target)) {
         setShowServices(false);
-        setHoveredItem('CISA Training');
       }
     };
 
@@ -59,7 +52,6 @@ const Header = () => {
     const handleClickOutside = (event) => {
       if (trainingRef.current && !trainingRef.current.contains(event.target)) {
         setShowTraining(false);
-        setHoveredItem('Information Security');
       }
     };
 
@@ -77,7 +69,7 @@ const Header = () => {
                 <Link to={'/'}>
                   <img className='w-16' src='../static/images/instec-logo.png' alt='logo'></img>
                 </Link>
-                <p className='text-xs lg:text-sm font-semibold'>INSTEC DIGITAL SYSTEMS</p>
+                <p className='text-xs lg:text-sm font-semibold'>Instec Digital Systems</p>
               </div>
               <div className='hidden md:flex flex-row items-center'>
                 <Link to={'/about-us'}>
@@ -230,46 +222,41 @@ const Header = () => {
         <div className='ml-[20vh] services w-3/5 color-secondary text-white drop-shadow-2xl' ref={servicesRef}>
           <div className='flex flex-row h-full'>
             <div className='w-1/4 flex flex-col justify-center p-4'>
-              <Link to={'/services'} className='w-full p-8 flex flex-col items-center space-y-4 hover:-translate-y-3 transition-transform'>
+              <Link to={'/services'} className='w-full p-8 flex flex-col items-center space-y-4 hover:-translate-y-3 transition-transform' onClick={() => setShowServices(false)}>
                 <p className='text-4xl cursor-pointer'>Services</p>
                 <img className='w-20 h-20' src='../static/images/service.png' alt='Training' />
               </Link>
             </div>
             <div className='my-6 border border-gray-400'></div>
-            <div className='w-1/2 flex flex-col p-8'>
-              <ul className='header h-full'>
-              <Link to={'/information-security'}>
-                <li onMouseEnter={() => handleItemHover('Information Security', '/information-security')}>Information Security</li>
-              </Link>
-              <Link to={'/data-and-it-service-management'}>
-                <li onMouseEnter={() => handleItemHover('Data and IT Service Management', '/data-and-it-service-management')}>Data and IT Service Management</li>
-              </Link>
-              <Link to={'/data-center-services'}>
-                <li onMouseEnter={() => handleItemHover('Data Center Services', '/data-center-services')}>Data Center Services</li>
-              </Link>
-              <Link to={'/business-continuity'}>
-                <li onMouseEnter={() => handleItemHover('Business Continuity', '/business-continuity')}>Business Continuity</li>
-              </Link>
-              <Link to={'/cloud-computing'}>
-                <li onMouseEnter={() => handleItemHover('Cloud Computing', '/cloud-computing')}>Cloud Computing</li>
-              </Link>
-              <Link to={'/virtualization-and-clouds'}>
-                <li onMouseEnter={() => handleItemHover('Virtualization & Clouds', '/virtualization-and-clouds')}>Virtualization &amp; Clouds</li>
-              </Link>
-              <Link to={'/web-design-development'}>
-                <li onMouseEnter={() => handleItemHover('Web Design & Development', '/web-design-development')}>Web Design &amp; Development</li>
-              </Link>
-              </ul>
-            </div>
-            <div className='my-6 border border-gray-400'></div>
-              <div className='flex flex-col justify-between'>
-                <Link to={hoveredLink} className='w-1/4 flex flex-col p-8'>
-                  <ul className='h-full space-y-4'>
-                    <p className='w-52 cursor-pointer'>{hoveredItem}</p>
-                    <button className='w-32 h-10 rounded text-white font-semibold bg-red-800 hover:bg-gray-200 hover:border-2 hover:border-red-800 hover:text-black hover:-translate-y-1 transition-transform tracking-wider'>Explore</button>              
-                  </ul>
-                </Link>
-                <Link to={'/services'} className='w-1/2 flex flex-col p-8'>
+              <div className='flex-grow flex flex-col p-8 space-y-4'>
+                <p className='font-semibold'>Featured Services</p>
+                <ul className='header h-full grid grid-cols-2'>
+                  <Link to={'/information-security'}>
+                    <li className='flex space-x-2 items-center'  onClick={() => setShowServices(false)}>
+                      <img className='h-8 w-8' src='../static/images/security.png'></img>
+                      <p>Information Security</p>
+                    </li>
+                  </Link>
+                  <Link to={'/business-continuity'} onClick={() => setShowServices(false)}>
+                    <li className='flex space-x-2 items-center'>
+                      <img className='h-8 w-8' src='../static/images/briefcase.png'></img>
+                      <p>Business Continuity</p>
+                    </li>
+                  </Link>
+                  <Link to={'/cloud-computing'} onClick={() => setShowServices(false)}>
+                    <li className='flex space-x-2 items-center'>
+                      <img className='h-8 w-8' src='../static/images/cloud-white.png'></img>
+                      <p>Cloud Computing</p>
+                    </li>
+                  </Link>
+                  <Link to={'/web-design-development'} onClick={() => setShowServices(false)}>
+                    <li className='flex space-x-2 items-center'>
+                      <img className='h-8 w-8' src='../static/images/code-white.png'></img>
+                      <p>Web Design &amp; Development</p>
+                    </li>
+                  </Link>
+                </ul>
+                <Link to={'/services'} className='mx-auto w-1/2 flex flex-col pt-4' onClick={() => setShowServices(false)}>
                   <button className='w-52 h-10 rounded text-white font-semibold bg-red-800 hover:bg-gray-200 hover:border-2 hover:border-red-800 hover:text-black hover:-translate-y-1 transition-transform tracking-wider'>View All Services</button>
                 </Link>
               </div>
@@ -281,43 +268,32 @@ const Header = () => {
         <div className='ml-[20vh] training w-3/5 color-secondary text-white drop-shadow-2xl' ref={trainingRef}>
             <div className='flex flex-row h-full'>
                 <div className='w-1/4 flex flex-col justify-center p-4'>
-                    <Link to={'/trainings'} className='w-full p-8 flex flex-col items-center space-y-4 hover:-translate-y-3 transition-transform'>
+                    <Link to={'/trainings'} className='w-full p-8 flex flex-col items-center space-y-4 hover:-translate-y-3 transition-transform' onClick={() => setShowTraining(false)}>
                         <p className='text-4xl cursor-pointer'>Trainings</p>
                         <img className='w-20 h-20' src='../static/images/training.png' alt='Training' />
                     </Link>
                 </div>
                 <div className='my-6 border border-gray-400'></div>
-                <div className='w-1/2 flex flex-col p-8'>
-                    <ul className='header h-full'>
-                        <Link to={'/cisa-training'}>
-                          <li onMouseEnter={() => handleItemHover('CISA Training', '/cisa-training')}>CISA Training</li>
+                <div className='flex-grow flex flex-col p-8 space-y-4'>
+                  <p className='font-semibold'>Featured Trainings</p>
+                  <ul className='header h-full grid grid-cols-2'>
+                        <Link to={'/cisa-training'} onClick={() => setShowTraining(false)}>
+                          <li>CISA Training</li>
                         </Link>
-                        <Link to={'/cissp-training'}>
-                          <li onMouseEnter={() => handleItemHover('CISSP Training', '/cissp-training')}>CISSP Training</li>
+                        <Link to={'/cissp-training'} onClick={() => setShowTraining(false)}>
+                          <li>CISSP Training</li>
                         </Link>
-                        <Link to={'/introduction-to-business-continuity-disaster-recovery'}>
-                          <li onMouseEnter={() => handleItemHover('Business continuity and disaster recovery', '/introduction-to-business-continuity-disaster-recovery')}>Business continuity and disaster recovery</li>
+                        <Link to={'/itil-training'} onClick={() => setShowTraining(false)}>
+                          <li>ITIL v3 Foundation Training</li>
                         </Link>
-                        <Link to={'/itil-training'}>
-                          <li onMouseEnter={() => handleItemHover('ITIL v3 Foundation Training', '/itil-training')}>ITIL v3 Foundation Training</li>
-                        </Link>
-                        <Link to={'/linux-training'}>
-                          <li onMouseEnter={() => handleItemHover('Linux Training', '/linux-training')}>Linux Training</li>
+                        <Link to={'/linux-training'} onClick={() => setShowTraining(false)}>
+                          <li>Linux Training</li>
                         </Link>
                     </ul>
-                </div>
-                <div className='my-6 border border-gray-400'></div>
-                <div className='flex flex-col justify-between'>
-                  <Link to={hoveredLink} className='w-1/4 flex flex-col p-8'>
-                      <ul className='w-full h-full space-y-4'>  
-                          <p className='w-52 cursor-pointer'>{hoveredItem}</p>
-                          <button className='w-32 h-10 rounded text-white font-semibold bg-red-800 hover:bg-gray-200 hover:border-2 hover:border-red-800 hover:text-black hover:-translate-y-1 transition-transform tracking-wider'>Explore</button>
-                      </ul>
-                  </Link>
-                  <Link to={'/trainings'} className='w-1/2 flex flex-col p-8'>
-                      <button className='w-52 h-10 rounded text-white font-semibold bg-red-800 hover:bg-gray-200 hover:border-2 hover:border-red-800 hover:text-black hover:-translate-y-1 transition-transform tracking-wider'>View All Trainings</button>
-                  </Link>
-                </div>
+                    <Link to={'/trainings'} className='mx-auto w-1/2 flex flex-col pt-4' onClick={() => setShowTraining(false)}>
+                        <button className='w-52 h-10 rounded text-white font-semibold bg-red-800 hover:bg-gray-200 hover:border-2 hover:border-red-800 hover:text-black hover:-translate-y-1 transition-transform tracking-wider'>View All Trainings</button>
+                    </Link>
+              </div>
             </div>
         </div>
         )}

@@ -1,17 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { ResetPage } from '../ResetPage';
+import MovingImages from '../components/MovingImages';
 
 const MainServicesPage = () => {
   return (
     <>
-    <section className='flex flex-col pb-8 space-y-12 items-center min-h-[100vh] w-full text-black bg-gray-100'>
+    <section className='flex flex-col pb-8 space-y-12 items-center min-h-[100vh] w-full text-black'>
         <ResetPage />
-        <div className="flex justify-center w-full h-[100vh] bg-[url('static/images/gradient-2.png')]">
+        <div className="flex justify-center w-full h-[100vh] bg-[url('static/images/gradient-home.png')]">
           <div className='mx-auto flex flex-row justify-between items-center p-16 2xl:p-0 w-full 2xl:w-3/4'>
             <div className='flex flex-col space-y-4 w-full'>
                 <div className='flex flex-col heading items-start flex-grow'>
-                    <p className='text-6xl font-bold text-red-800'>Instec</p> 
+                    <p className='text-6xl font-bold text-red-600'>Instec</p> 
                     <p className='text-white text-6xl font-bold '>Digital Systems</p>
                     <p className='text-white text-2xl font-bold mb-6 mt-16'>All Your IT Needs in One Place</p>
                 </div>
@@ -19,7 +20,7 @@ const MainServicesPage = () => {
                     <p className='text-center'>View all services</p>
                 </Link>
             </div>
-            <img className='hidden lg:block w-3/5' src='../static/images/earth-2.jpg' alt=''></img>
+            <img className='hidden lg:block w-3/5' src='../static/images/cover-home.png' alt=''></img>
           </div>
         </div>
         <div className='w-full min-h-[100vh] lg:min-h-[50vh]'>
@@ -44,7 +45,7 @@ const MainServicesPage = () => {
             </div>
         </div>
         <div className='w-full flex flex-col space-y-12'>
-            <div className='mx-auto w-full lg:w-3/4 flex flex-col lg:flex-row items-center space-x-2 lg:space-x-12 justify-evenly'>
+            <div className='mx-auto w-full lg:w-3/4 flex flex-col lg:flex-row items-center lg:space-x-12 justify-evenly'>
                 <div className='flex flex-col items-center space-y-4 p-4 lg:p-8'>
                     <p className='text-xl lg:text-3xl font-semibold'>INSTEC Consulting</p>
                     <p>Most frequently publicly named incident response provider.</p>
@@ -54,7 +55,7 @@ const MainServicesPage = () => {
                     <p>More than 75% of Fortune 100 companies rely on INSTEC services.</p>
                 </div>
             </div>
-            <div className='mx-auto  w-full lg:w-3/4 grid grid-cols-1 lg:grid-cols-3 gap-12 p-4 lg:p-16'>
+            <div className='mx-auto w-full grid grid-cols-1 lg:grid-cols-3 gap-12 p-4 lg:p-16 bg-gray-100 justify-items-center'>
                 <div className='w-80 h-96 flex flex-col border bg-white py-4 p-2 lg:p-8 space-y-4'>
                     <p className='font-bold text-lg'>Incident Response</p>
                     <ul className='pl-6'>
@@ -163,7 +164,7 @@ const MainServicesPage = () => {
                     </button>
                 </div>
             </div>
-            <div className='mx-auto  w-full lg:w-3/4 grid grid-cols-1'>
+            <div className='mx-auto w-full grid grid-cols-1 bg-gray-100 justify-items-center'>
                 <div className='flex flex-col lg:flex-row justify-evenly lg:space-x-16'>
                     <div className='w-full lg:w-1/3 p-12 flex flex-col space-y-6 items-start'>
                         <p className='w-full text-xl font-semibold'>Ransomware</p>
@@ -229,72 +230,38 @@ const MainServicesPage = () => {
                     </button>
                 </div>
             </div>
-            <div className=' w-full lg:w-3/4 mx-auto grid grid-cols-1'>
-                <div className='flex flex-col lg:flex-row justify-evenly items-center'>
-                    <div className='w-full lg:w-1/4 p-4 lg:p-12 flex flex-col lg: items-start'>
-                        <p className='w-full text-xl font-semibold'>Accelerate incident response times.</p>
-                        <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
-                            <p className='font-semibold text-sm'>Incident Response Retainer</p>
-                            <img className='w-4 h-4' src='../static/images/right-arrow.png' alt=''></img>
-                        </button>
-                    </div>
-                    <div className='w-full lg:w-1/4 p-4 lg:p-12 flex flex-col lg: items-start'>
-                        <p className='w-full text-xl font-semibold'>Hunt for an active or previous attack.</p>
-                        <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
-                            <p className='font-semibold text-sm'>Compromise Assessment</p>
-                            <img className='w-4 h-4' src='../static/images/right-arrow.png' alt=''></img>
-                        </button>
-                    </div>
-                    <div className='w-full lg:w-1/4 p-4 lg:p-12 flex flex-col lg: items-start'>
-                        <p className='w-full text-xl font-semibold'>Verify capabilities against the latest threats.</p>
-                        <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
-                            <p className='font-semibold text-sm'>Red Team Assessment</p>
-                            <img className='w-4 h-4' src='../static/images/right-arrow.png' alt=''></img>
-                        </button>
+            <div className='flex flex-col space-y-[15vh]'>
+                <div className='w-full bg-red-100 p-4 lg:p-16 flex flex-row items-center justify-center'>
+                    <div className='bg-white w-full lg:w-3/4 mx-auto'>
+                        <MovingImages />
                     </div>
                 </div>
-                <div className='flex flex-col lg:flex-row justify-evenly items-center'>
-                    <div className='w-full lg:w-1/4 p-4 lg:p-12 flex flex-col lg: items-start'>
-                        <p className='w-full text-xl font-semibold'>Test your incident response plans with scenario gameplay.</p>
-                        <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
-                            <p className='font-semibold text-sm'>Tabletop Exercise</p>
-                            <img className='w-4 h-4' src='../static/images/right-arrow.png' alt=''></img>
-                        </button>
-                    </div>
-                    <div className='w-full lg:w-1/4 p-4 lg:p-12 flex flex-col lg: items-start'>
-                        <p className='w-full text-xl font-semibold'>Empower your teams with advanced knowledge.</p>
-                        <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
-                            <p className='font-semibold text-sm'>Cyber Security Training</p>
-                            <img className='w-4 h-4' src='../static/images/right-arrow.png' alt=''></img>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div className='mx-auto w-full lg:w-3/4 grid grid-cols-1'>
-                <div className='flex flex-col space-y-4 lg:flex-row justify-evenly items-center lg:space-x-16'>
-                    <div className='w-3/4 lg:w-96 h-52 lg:h-72 flex flex-col border bg-white  p-2 lg:p-8 space-y-4'>
-                        <p className='font-bold text-lg'>Explore the full portfolio</p>
-                        <p>Explore the various ways Mandiant Consulting can help your organization achieve its security goals.</p>
-                        <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
-                            <p className='font-bold text-red-800'>View All Consulting</p>
-                            <img src='../static/images/right-arrow.png' className='w-3 h-4' alt=''></img>
-                        </button>
-                    </div>
-                    <div className='w-3/4 lg:w-96 h-52 lg:h-72 flex flex-col border bg-white  p-2 lg:p-8 space-y-4'>
-                        <p className='font-bold text-lg'>Get started</p>
-                        <p>We want to hear from you. Share your vision with our team of dedicated consulting experts and we'll shape a solution that fits your needs.</p>
-                        <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
-                            <p className='font-bold text-red-800'>Contact Us Today</p>
-                            <img src='../static/images/right-arrow.png' className='w-3 h-4' alt=''></img>
-                        </button>
-                    </div>
-                    <div className='w-3/4 lg:w-96 h-52 lg:h-72 flex flex-col border bg-white  p-2 lg:p-8 space-y-4'>
-                        <p className='font-bold text-lg'>Expertise On Demand</p>
-                        <p>Ask an Analyst your most challenging security questions and utilize flexible spending units to access training and consulting services.</p>
-                        <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
-                            <p className='font-bold text-red-800'>Learn More</p>
-                            <img src='../static/images/right-arrow.png' className='w-3 h-4' alt=''></img>
-                        </button>
+                <div className='mx-auto w-full lg:w-3/4 grid grid-cols-1'>
+                    <div className='flex flex-col space-y-4 lg:flex-row lg:space-y-0 justify-evenly items-center lg:space-x-16'>
+                        <div className='w-3/4 lg:w-96 h-52 lg:h-72 flex flex-col border bg-white  p-2 lg:p-8 space-y-4'>
+                            <p className='font-bold text-lg'>Explore the full portfolio</p>
+                            <p>Explore the various ways Mandiant Consulting can help your organization achieve its security goals.</p>
+                            <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
+                                <p className='font-bold text-red-800'>View All Consulting</p>
+                                <img src='../static/images/right-arrow.png' className='w-3 h-4' alt=''></img>
+                            </button>
+                        </div>
+                        <div className='w-3/4 lg:w-96 h-52 lg:h-72 flex flex-col border bg-white  p-2 lg:p-8 space-y-4'>
+                            <p className='font-bold text-lg'>Get started</p>
+                            <p>We want to hear from you. Share your vision with our team of dedicated consulting experts and we'll shape a solution that fits your needs.</p>
+                            <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
+                                <p className='font-bold text-red-800'>Contact Us Today</p>
+                                <img src='../static/images/right-arrow.png' className='w-3 h-4' alt=''></img>
+                            </button>
+                        </div>
+                        <div className='w-3/4 lg:w-96 h-52 lg:h-72 flex flex-col border bg-white  p-2 lg:p-8 space-y-4'>
+                            <p className='font-bold text-lg'>Expertise On Demand</p>
+                            <p>Ask an Analyst your most challenging security questions and utilize flexible spending units to access training and consulting services.</p>
+                            <button className='flex p-2 w-fit text-red-800 hover:bg-red-200 hover:translate-x-4 space-x-2 items-center rounded transition-all duration-300'>
+                                <p className='font-bold text-red-800'>Learn More</p>
+                                <img src='../static/images/right-arrow.png' className='w-3 h-4' alt=''></img>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

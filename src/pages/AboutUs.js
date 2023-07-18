@@ -9,49 +9,51 @@ const AboutUs = () => {
   return (
     <section className='trainings flex flex-col pb-8 space-y-[20vh] items-center min-h-[50vh] w-full text-black'>
         <ResetPage />
-        <div className="flex w-full h-[50vh] bg-[url('static/images/about-us-cover.png')]">
-            <div className='w-full h-full flex flex-col justify-center'>
-                <div className='mx-auto flex flex-row justify-center items-center w-1/2'>
-                    <div className='flex flex-col heading items-start'>
-                        <p className='text-white text-6xl font-bold'>About Us</p> 
+        <div className='flex flex-col space-y-[10vh]'>
+            <div className="flex w-full items-center min-h-[50vh] bg-[url('static/images/about-us-cover.png')]">
+                <div className='w-full h-full flex flex-col justify-center'>
+                    <div className='mx-auto flex flex-row justify-center items-center w-1/2'>
+                        <div className='flex flex-col heading items-start'>
+                            <p className='text-white text-6xl font-bold'>About Us</p> 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div className=' w-full lg:w-3/4 flex flex-col mx-auto p-8 text-black space-y-[20vh]'>
-            <div className='w-full flex flex-col lg:flex-row p-4 lg:p-16 rounded lg:tracking-wider text-sm lg:text-lg lg:space-x-8 items-start'>
+            <div className='mx-auto w-full lg:w-3/4 flex flex-col space-y-6 lg:space-y-0 lg:flex-row p-4 lg:p-16 rounded lg:tracking-wider text-sm lg:text-lg lg:space-x-8 items-start'>
                 <div className='w-full lg:w-1/2'>
                     <img className='w-full' src='../static/images/about-us-hero.jpg' alt=''></img>
                 </div>
                 <div className='w-full lg:w-1/2 flex flex-col space-y-4'>
-                    <p className='text-xl lg:text-3xl font-semibold text-black'>About Us</p>
-                    <p className=''>Instec Digital is a creative engineering design and systems integration team based in Karachi, Pakistan. 
-                        We help organizations solve their toughest challenges in Information Security, Business Continuity and Disaster Recovery Planning, IT Service Management, 
+                    <p className='text-xl lg:text-3xl font-semibold text-black text-center lg:text-left'>About Us</p>
+                    <p className=''>Instec Digital is a creative engineering design and systems integration team based in Karachi, Pakistan.
+                        We help organizations solve their toughest challenges in Information Security, Business Continuity and Disaster Recovery Planning, IT Service Management,
                         Virtualization & Cloud Migrations and Interactive Web Application Development. Our core team consists of professional engineers having rich and diverse backgrounds.</p>
                     <p className=''>We work on projects with our customers in Energy, Financial, International Development, Health, Manufacturing and Telecom sectors.</p>
                 </div>
             </div>
-            <div className='mx-auto w-full lg:w-1/2 border flex flex-col lg:flex-row p-4 lg:p-16 items-center justify-center rounded lg:tracking-wider text-sm lg:text-lg lg:space-x-8'>
+        </div>
+        <div className=' w-full lg:w-3/4 flex flex-col mx-auto p-8 text-black space-y-[20vh]'>
+            <div className='mx-auto w-full lg:w-3/4 flex flex-col lg:flex-row p-4 lg:p-16 items-center justify-center rounded lg:tracking-wider text-sm lg:text-lg lg:space-x-8'>
                 <div className='w-full flex flex-col space-y-12 text-lg lg:text-xl 2xl:text-2xl'>
-                    <p className='text-center w-full font-semibold text-xl lg:text-3xl'>Some Stats About Our Clients</p>
-                    <div className='w-full flex flex-col lg:flex-row justify-between items-baseline text-center'>
+                    <p className='text-center w-full font-semibold text-xl lg:text-2xl xl:text-3xl'>Some Stats About Our Clients</p>
+                    <div className='w-full flex flex-col lg:flex-row justify-between items-center text-center'>
                         <div className='p-4 space-y-2 lg:w-1/3'>
-                            <p className='text-red-800 font-semibold'>300</p>
+                            <p className='text-red-800 font-bold text-3xl'>300</p>
                             <p className='font-semibold'>Customers</p>
                         </div>
                         <div className='p-4 space-y-2 lg:w-1/3'>
-                            <p className='text-red-800 font-semibold'>250,000+</p>
+                            <p className='text-red-800 font-bold text-3xl'>250,000+</p>
                             <p className='font-semibold'>Users</p>
                         </div>
                         <div className='p-4 space-y-2 lg:w-1/3'>
-                            <p className='text-red-800 font-semibold'>450</p>
+                            <p className='text-red-800 font-bold text-3xl'>450</p>
                             <p className='font-semibold'>Incidents Handled</p>
                         </div>
                     </div>
                 </div>  
             </div>
         </div>
-        <div className='w-full bg-red-100 border p-8 lg:p-32 flex flex-row items-center justify-center rounded text-sm lg:text-lg lg:space-x-8'>
+        <div className='w-full bg-red-100 p-8 lg:p-32 flex flex-row items-center justify-center rounded text-sm lg:text-lg lg:space-x-8'>
             <div className='h-full w-3/4 lg:ml-0 flex flex-col lg:flex-row justify-evenly items-center border-black lg:border-2 lg:border-x-0 lg:border-b-0 font-semibold'>
                 <div className='h-20 flex flex-row lg:flex-col items-center justify-start space-y-4 -translate-x-10 lg:-translate-y-10'>
                     <img className='w-20 h-20 bg-red-100 p-4 fourth-group' src='../static/images/security-black.png' alt=''></img>
