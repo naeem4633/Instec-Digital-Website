@@ -15,7 +15,7 @@ const CloudComputing = () => {
                 <p className='text-white text-6xl font-bold '>Cloud Computing</p>
                 <p className='text-6xl font-bold text-red-800'>Services</p> 
             </div>
-            <img className='hidden lg:block' src='../static/images/online-training.png' alt=''></img>
+            <img className='hidden lg:block' src='../static/images/cloud-computing-cover.png' alt=''></img>
           </div>
         </div>
         <div className='w-full flex flex-col space-y-4 p-8'>
