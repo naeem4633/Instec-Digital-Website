@@ -75,8 +75,8 @@ const Header = () => {
                 <Link to={'/about-us'}>
                   <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white'>About</p>
                 </Link>
-                  <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white' onClick={handleTrainingClick}>Trainings</p>
                   <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white' onClick={handleServicesClick}>Services</p>
+                  <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white' onClick={handleTrainingClick}>Trainings</p>
                 <Link to={'/contact-us'}>
                   <p className='p-4 hover:bg-red-800 cursor-pointer hover:text-white'>Contact Us</p>
                 </Link>
